@@ -1,5 +1,5 @@
 import { NavBar } from "../components/Header/NavBar";
-import * as mov1 from "../assets/dark-mode-animation.webm";
+// import * as mov1 from "../assets/dark-mode-animation.webm";
 
 export function LayoutBase({
   children,
