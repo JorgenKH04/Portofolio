@@ -1,5 +1,6 @@
 import { LanguageType } from "../../data/language";
 import { SettingsMenu } from "./SettingsMenu";
+import * as MyLogo from "../../assets/logo/Logo1-dark64x64.png";
 
 export function NavBar({
   layout,
@@ -14,13 +15,18 @@ export function NavBar({
     <>
       {layout === "mobile" ? (
         <nav>
-          <img alt="" />
-          <svg />
+          <div>
+            <img src={MyLogo.default} alt="My logo" />
+            <h1>JORGEN</h1>
+          </div>
           <SettingsMenu setLanguage={setLanguage} />
         </nav>
       ) : (
         <nav>
-          <img alt="" />
+          <div>
+            <img src={MyLogo.default} alt="My logo" />
+            <h1>JORGEN</h1>
+          </div>
           <a href="vg.no">{lang.aboutme}</a>
           <a href="vg.no">{lang.contact}</a>
           <a href="vg.no">{lang.projects}</a>

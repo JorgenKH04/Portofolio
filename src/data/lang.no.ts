@@ -9,6 +9,7 @@ export class lang extends Array<string> {
 	contactbutton = "Kontakt meg";
 	contact = "Kontakt";
 	projects = "Prosjekter";
+	projectsbutton = "Mine prosjekter";
 	aboutme = "Om meg";
 	communicator = "Good kommunikasjon";
 	flexible = "Fleksibel";

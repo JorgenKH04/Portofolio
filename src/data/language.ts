@@ -8,6 +8,7 @@ export interface LanguageType extends Array<string> {
 	introparagraph3: string;
 	contactbutton: string;
 	contact: string;
+	projectsbutton: string;
 	projects: string;
 	aboutme: string;
 	communicator: string;

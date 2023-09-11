@@ -8,6 +8,7 @@ export class lang extends Array<string> {
 		"In my free time, I enjoy playing video games, particularly tactical shooters with friends. However, I'm also fascinated by new technologies, such as AI, and find myself exploring them in my spare time. I'm particularly excited about the future of AI and find their learning models to be incredibly interesting. Honestly I just like the premise of learning new things, and I am very excited for my future in the tech industry.";
 	contactbutton = "Contact me";
 	contact = "Contact";
+	projectsbutton = "My projects";
 	projects = "Projects";
 	aboutme = "About me";
 	communicator = "Good communicator";
