@@ -1,13 +1,14 @@
+import { LanguageType } from "../../data/language";
 import { SettingsMenu } from "./SettingsMenu";
 
 export function NavBar({
   layout,
-  language,
   setLanguage,
+  lang,
 }: {
   layout: string;
-  language: string;
   setLanguage: React.Dispatch<React.SetStateAction<string>>;
+  lang: LanguageType;
 }) {
   return (
     <>
@@ -20,9 +21,9 @@ export function NavBar({
       ) : (
         <nav>
           <img alt="" />
-          <a href="vg.no">{language === "nb-NO" ? "Om meg" : "About"}</a>
-          <a href="vg.no">{language === "nb-NO" ? "Kontakt meg" : "Contact"}</a>
-          <a href="vg.no">{language === "nb-NO" ? "Prosjekter" : "Projects"}</a>
+          <a href="vg.no">{lang.aboutme}</a>
+          <a href="vg.no">{lang.contact}</a>
+          <a href="vg.no">{lang.projects}</a>
           <svg />
           <SettingsMenu setLanguage={setLanguage} />
         </nav>
