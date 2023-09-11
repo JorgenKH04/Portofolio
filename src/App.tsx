@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { LayoutBase } from "./layout/LayoutBase";
 import { Language } from "./data/language";
+import { AboutMeSection } from "./components/Main/AboutMeSection";
 
 function App() {
   const [language, setLanguage] = useState("nb-NO");
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <LayoutBase layout={layout} setLanguage={setLanguage} lang={lang}>
-      <h1>{layout === "pc" ? "nice" : "not nice"}</h1>
+      <AboutMeSection lang={lang} />
     </LayoutBase>
   );
 }
