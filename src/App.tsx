@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { LayoutBase } from "./layout/LayoutBase";
 import { Language } from "./data/language";
+import { HeroSection } from "./components/Header/HeroSection";
 import { AboutMeSection } from "./components/Main/AboutMeSection";
 import { MySkills } from "./components/Main/MySkills";
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <LayoutBase layout={layout} setLanguage={setLanguage} lang={lang}>
+      <HeroSection layout={layout} lang={lang} />
       <AboutMeSection lang={lang} />
       <MySkills />
     </LayoutBase>

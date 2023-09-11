@@ -1,6 +1,5 @@
 import { LanguageType } from "../data/language";
 import { NavBar } from "../components/Header/NavBar";
-import { HeroSection } from "../components/Header/HeroSection";
 
 export function LayoutBase({
   children,
@@ -17,7 +16,6 @@ export function LayoutBase({
     <>
       <header>
         <NavBar layout={layout} setLanguage={setLanguage} lang={lang} />
-        <HeroSection layout={layout} lang={lang} />
       </header>
       <main>{children}</main>
       <footer>
