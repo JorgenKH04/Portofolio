@@ -1,0 +1,3 @@
+Remake with zustand
+Add more interactivity and animations
+Redo design completely
