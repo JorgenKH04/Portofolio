@@ -1,8 +1,9 @@
-export function SettingsMenu({
-  setLanguage,
-}: {
-  setLanguage: React.Dispatch<React.SetStateAction<string>>;
-}) {
+import { useLanguageContext } from "../../contexts/languagecontext";
+
+export function SettingsMenu() {
+  const languageContext = useLanguageContext();
+  if (!languageContext) return null;
+  const setLanguage = languageContext[1];
   return (
     <>
       <button type="button">Dark/Light Mode</button>

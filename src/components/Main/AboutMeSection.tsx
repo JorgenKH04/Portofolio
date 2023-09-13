@@ -1,6 +1,9 @@
-import { LanguageType } from "../../data/language";
+import { useLanguageContext } from "../../contexts/languagecontext";
 
-export function AboutMeSection({ lang }: { lang: LanguageType }) {
+export function AboutMeSection() {
+  const languageContext = useLanguageContext();
+  if (!languageContext) return null;
+  const lang = languageContext[0];
   return (
     <div>
       <h2>{lang.aboutme}</h2>

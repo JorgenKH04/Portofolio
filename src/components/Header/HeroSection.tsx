@@ -1,13 +1,11 @@
-import { LanguageType } from "../../data/language";
+import { useLanguageContext } from "../../contexts/languagecontext";
 import * as mov1 from "../../assets/animation/dark-mode-animation.webm";
 
-export function HeroSection({
-  lang,
-  layout,
-}: {
-  lang: LanguageType;
-  layout: string;
-}) {
+export function HeroSection({ layout }: { layout: string }) {
+  const languageContext = useLanguageContext();
+  if (!languageContext) return null;
+  const lang = languageContext[0];
+
   return (
     <div>
       {layout === "mobile" ? null : (

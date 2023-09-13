@@ -1,16 +1,11 @@
-import { LanguageType } from "../../data/language";
+import { useLanguageContext } from "../../contexts/languagecontext";
 import { SettingsMenu } from "./SettingsMenu";
 import * as MyLogo from "../../assets/logo/Logo1-dark64x64.png";
 
-export function NavBar({
-  layout,
-  setLanguage,
-  lang,
-}: {
-  layout: string;
-  setLanguage: React.Dispatch<React.SetStateAction<string>>;
-  lang: LanguageType;
-}) {
+export function NavBar({ layout }: { layout: string }) {
+  const languageContext = useLanguageContext();
+  if (!languageContext) return null;
+  const lang = languageContext[0];
   return (
     <>
       {layout === "mobile" ? (
@@ -19,7 +14,7 @@ export function NavBar({
             <img src={MyLogo.default} alt="My logo" />
             <h1>JORGEN</h1>
           </div>
-          <SettingsMenu setLanguage={setLanguage} />
+          <SettingsMenu />
         </nav>
       ) : (
         <nav>
@@ -31,7 +26,7 @@ export function NavBar({
           <a href="vg.no">{lang.contact}</a>
           <a href="vg.no">{lang.projects}</a>
           <svg />
-          <SettingsMenu setLanguage={setLanguage} />
+          <SettingsMenu />
         </nav>
       )}
     </>
