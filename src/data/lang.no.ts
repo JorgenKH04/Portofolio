@@ -19,10 +19,10 @@ export class lang extends Array<string> {
 	adaptable = "God tilpassningsevne";
 	myskills = "Mine ferdigheter";
 	collaborationheader = "Ønsker du å sammarbeide?";
-	collaborationparagraph1 =
+	collaborationpart1 =
 		"Jeg er alltid åpen for nye spennende muligheter og ser frem til å høre fra deg. Ta gjerne kontakt via e-post på";
-	collaborationparagraph2 = " jorgenkh04.kodehode@gmail.com ";
-	collaborationparagraph3 =
+	collaborationemail = " jorgenkh04.kodehode@gmail.com ";
+	collaborationpart2 =
 		"eller fyll ut skjemaet nedenfor. Jeg svarer så raskt som mulig og ser frem til å diskutere hvordan vi kan skape noe fantastisk sammen!";
 	ctacontact = "Kontakt meg";
 	moreprojects = "Se mer";

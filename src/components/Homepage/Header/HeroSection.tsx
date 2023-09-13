@@ -1,5 +1,5 @@
-import { useLanguageContext } from "../../contexts/languageContext";
-import { useLayoutContext } from "../../contexts/layoutContext";
+import { useLanguageContext } from "../../../contexts/languageContext";
+import { useLayoutContext } from "../../../contexts/layoutContext";
 import * as mov1 from "../../assets/animation/dark-mode-animation.webm";
 
 export function HeroSection() {

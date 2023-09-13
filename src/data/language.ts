@@ -19,9 +19,9 @@ export interface LanguageType extends Array<string> {
 	adaptable: string;
 	myskills: string;
 	collaborationheader: string;
-	collaborationparagraph1: string;
-	collaborationparagraph2: string;
-	collaborationparagraph3: string;
+	collaborationpart1: string;
+	collaborationemail: string;
+	collaborationpart2: string;
 	ctacontact: string;
 	moreprojects: string;
 	misc: string;

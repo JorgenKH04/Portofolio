@@ -2,6 +2,11 @@ svg {
   width: 20px;
 }
 
+.container {
+  color: #000000;
+}
+
 .dark {
-  background-color: black;
+  /* background-color: black; */
+  color: #000000;
 }

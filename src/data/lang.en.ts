@@ -19,10 +19,10 @@ export class lang extends Array<string> {
 	adaptable = "adaptable";
 	myskills = "My skills";
 	collaborationheader = "Looking to collaborate?";
-	collaborationparagraph1 =
+	collaborationpart1 =
 		"I would love to hear from you. Feel free to reach out via email at";
-	collaborationparagraph2 = " jorgenkh04.kodehode@gmail.com ";
-	collaborationparagraph3 =
+	collaborationemail = " jorgenkh04.kodehode@gmail.com ";
+	collaborationpart2 =
 		"or fill out the form below. I aim to respond promptly and I'm excited to discuss how we can create something amazing together!";
 	ctacontact = "Get in touch";
 	moreprojects = "View more";

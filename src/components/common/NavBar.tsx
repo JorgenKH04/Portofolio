@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import { useLanguageContext } from "../../contexts/languageContext";
 import { useLayoutContext } from "../../contexts/layoutContext";
-import { SettingsMenu } from "../Header/SettingsMenu";
+import { SettingsMenu } from "./SettingsMenu";
 import * as MyLogo from "../../assets/logo/Logo1-dark64x64.png";
 
 export function NavBar() {

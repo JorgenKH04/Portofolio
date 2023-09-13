@@ -1,6 +1,7 @@
-import { HeroSection } from "../components/Header/HeroSection";
-import { AboutMeSection } from "../components/Main/AboutMeSection";
-import { MySkills } from "../components/Main/MySkills";
+import { HeroSection } from "../components/Homepage/Header/HeroSection";
+import { AboutMeSection } from "../components/Homepage/Main/AboutMeSection";
+import { MySkills } from "../components/Homepage/Main/MySkills";
+import { CtaCollaboration } from "../components/Homepage/Main/CtaCollaboration";
 
 export function Homepage() {
   return (
@@ -8,6 +9,7 @@ export function Homepage() {
       <HeroSection />
       <AboutMeSection />
       <MySkills />
+      <CtaCollaboration />
     </>
   );
 }

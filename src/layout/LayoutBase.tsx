@@ -12,7 +12,7 @@ export function LayoutBase() {
   }
   const theme = themeContext[0];
   return (
-    <div className={theme}>
+    <div className={`container ${theme}`}>
       <header>
         <NavBar />
       </header>
