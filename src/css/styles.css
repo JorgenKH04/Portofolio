@@ -10,3 +10,11 @@ svg {
   /* background-color: black; */
   color: #000000;
 }
+
+.light {
+  color: #000000;
+}
+
+.none {
+  display: none;
+}

@@ -6,10 +6,7 @@ import "../css/styles.css";
 
 export function LayoutBase() {
   const themeContext = useThemeContext();
-  if (!themeContext) {
-    console.log("themecontext Null");
-    return null;
-  }
+  if (!themeContext) return null;
   const theme = themeContext[0];
   return (
     <div className={`container ${theme}`}>

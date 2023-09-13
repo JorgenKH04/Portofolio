@@ -1,4 +1,4 @@
-import { useLanguageContext } from "../../contexts/languageContext";
+import { useLanguageContext } from "../../../contexts/languageContext";
 
 export function AboutMeSection() {
   const languageContext = useLanguageContext();

@@ -3,22 +3,20 @@ import { Link } from "react-router-dom";
 import { useLanguageContext } from "../../contexts/languageContext";
 import { useLayoutContext } from "../../contexts/layoutContext";
 import { SettingsMenu } from "./SettingsMenu";
-import * as MyLogo from "../../assets/logo/Logo1-dark64x64.png";
+import { Logo } from "./Logo";
 
 export function NavBar() {
   const layoutContext = useLayoutContext();
-  const mobile = layoutContext;
   const languageContext = useLanguageContext();
   if (!languageContext) return null;
   const lang = languageContext[0];
+  const mobile = layoutContext;
+
   return (
     <>
       {mobile ? (
         <nav>
-          <Link to={"/"}>
-            <img src={MyLogo.default} alt="My logo" />
-            <h1>JORGEN</h1>
-          </Link>
+          <Logo />
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 6 18 12">
             <title>menu</title>
             <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
@@ -27,10 +25,7 @@ export function NavBar() {
         </nav>
       ) : (
         <nav>
-          <Link to={"/"}>
-            <img src={MyLogo.default} alt="My logo" />
-            <h1>JORGEN</h1>
-          </Link>
+          <Logo />
           <Link to={"aboutme"}>{lang.aboutme}</Link>
           <Link to={"contact"}>{lang.contact}</Link>
           <Link to={"projects"}>{lang.projects}</Link>

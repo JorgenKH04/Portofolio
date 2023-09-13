@@ -1,22 +1,50 @@
 import { useLanguageContext } from "../../../contexts/languageContext";
 import { useLayoutContext } from "../../../contexts/layoutContext";
-import * as mov1 from "../../assets/animation/dark-mode-animation.webm";
+import { useThemeContext } from "../../../contexts/themeContext";
+import * as darkAnimation from "../../../assets/animation/dark-mode-animation.webm";
+import * as lightAnimation from "../../../assets/animation/light-mode-animation.webm";
 
 export function HeroSection() {
+  const themeContext = useThemeContext();
   const layoutContext = useLayoutContext();
-  const mobile = layoutContext;
   const languageContext = useLanguageContext();
-  if (!languageContext) return null;
+  if (!languageContext || !themeContext) return null;
   const lang = languageContext[0];
+  const theme = themeContext[0];
+  const mobile = layoutContext;
+
+  function AnimationLogic() {
+    if (mobile) return null;
+    return (
+      <>
+        {/* rome-ignore lint/a11y/useMediaCaption: <explanation> */}
+        <video
+          loop
+          autoPlay
+          width="100%"
+          height="100%"
+          className={theme === "light" ? "animation" : "none"}
+        >
+          <source src={lightAnimation.default} />
+        </video>
+        {/* rome-ignore lint/a11y/useMediaCaption: <explanation> */}
+        <video
+          loop
+          autoPlay
+          width="100%"
+          height="100%"
+          className={theme === "dark" ? "animation" : "none"}
+        >
+          <source src={darkAnimation.default} />
+        </video>
+      </>
+    );
+  }
 
   return (
     <div>
-      {mobile ? null : (
-        // rome-ignore lint/a11y/useMediaCaption: <explanation>
-        <video loop autoPlay width="100%" height="100%">
-          <source src={mov1.default} />
-        </video>
-      )}
+      {AnimationLogic()}
+      <h1>{theme}</h1>
       <h1>{lang.greeting}</h1>
       <p>{lang.introparagraph1}</p>
       <button type="button">{lang.contactbutton}</button>

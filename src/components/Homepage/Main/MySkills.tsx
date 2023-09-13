@@ -1,4 +1,4 @@
-import { frontEnd, backEnd, design } from "../../data/skilldata";
+import { frontEnd, backEnd, design } from "../../../data/skilldata";
 
 export function MySkills() {
   return (
