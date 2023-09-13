@@ -1,4 +1,4 @@
-import { NavBar } from "../components/Header/NavBar";
+import { NavBar } from "../components/common/NavBar";
 
 export function LayoutBase({ children }: { children: React.ReactNode }) {
   return (

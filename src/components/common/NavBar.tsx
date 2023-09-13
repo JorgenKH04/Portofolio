@@ -1,6 +1,6 @@
 import { useLanguageContext } from "../../contexts/languageContext";
 import { useLayoutContext } from "../../contexts/layoutContext";
-import { SettingsMenu } from "./SettingsMenu";
+import { SettingsMenu } from "../Header/SettingsMenu";
 import * as MyLogo from "../../assets/logo/Logo1-dark64x64.png";
 
 export function NavBar() {
