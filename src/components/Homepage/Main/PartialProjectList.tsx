@@ -7,8 +7,8 @@ export function PartialProjectList() {
   const languageContext = useLanguageContext();
   if (!languageContext) return null;
   const lang = languageContext[0];
-  const layout = layoutContext;
-  const isMobile = layout ? 3 : 6;
+  const mobile = layoutContext;
+  const isMobile = mobile ? 3 : 6;
 
   return (
     <>

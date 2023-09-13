@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import { NavBar } from "../components/common/NavBar";
+import { Footer } from "../components/common/Footer";
 import { useThemeContext } from "../contexts/themeContext";
 import "../css/styles.css";
 
@@ -17,7 +18,7 @@ export function LayoutBase() {
         <Outlet />
       </main>
       <footer>
-        <h2>temp</h2>
+        <Footer />
       </footer>
     </div>
   );
