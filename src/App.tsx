@@ -4,16 +4,20 @@ import { AboutMeSection } from "./components/Main/AboutMeSection";
 import { MySkills } from "./components/Main/MySkills";
 import { LanguageProvider } from "./contexts/languageContext";
 import { LayoutProvider } from "./contexts/layoutContext";
+import { ThemeProvider } from "./contexts/themeContext";
+import "./css/styles.css";
 
 function App() {
   return (
     <LanguageProvider>
       <LayoutProvider>
-        <LayoutBase>
-          <HeroSection />
-          <AboutMeSection />
-          <MySkills />
-        </LayoutBase>
+        <ThemeProvider>
+          <LayoutBase>
+            <HeroSection />
+            <AboutMeSection />
+            <MySkills />
+          </LayoutBase>
+        </ThemeProvider>
       </LayoutProvider>
     </LanguageProvider>
   );

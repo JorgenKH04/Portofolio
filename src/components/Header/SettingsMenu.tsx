@@ -1,12 +1,24 @@
 import { useLanguageContext } from "../../contexts/languageContext";
+import { useThemeContext } from "../../contexts/themeContext";
 
 export function SettingsMenu() {
   const languageContext = useLanguageContext();
-  if (!languageContext) return null;
+  const themeContext = useThemeContext();
+  if (!languageContext || !themeContext) return null;
   const setLanguage = languageContext[1];
+  const setTheme = themeContext[1];
+  const theme = themeContext[0];
   return (
-    <>
-      <button type="button">Dark/Light Mode</button>
+    <div>
+      <h1>hello</h1>
+      <button
+        type="button"
+        onClick={() => {
+          setTheme(theme === "dark" ? "light" : "dark");
+        }}
+      >
+        {theme}
+      </button>
       <div>
         <button type="button">Dropdown opener</button>
         <button
@@ -26,6 +38,6 @@ export function SettingsMenu() {
           EN
         </button>
       </div>
-    </>
+    </div>
   );
 }
