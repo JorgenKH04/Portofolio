@@ -1,26 +1,27 @@
 import { Outlet } from "react-router-dom";
 
 import { NavBar } from "../components/common/NavBar";
-import { LanguageProvider } from "../contexts/languageContext";
-import { LayoutProvider } from "../contexts/layoutContext";
-import { ThemeProvider } from "../contexts/themeContext";
+import { useThemeContext } from "../contexts/themeContext";
+import "../css/styles.css";
 
 export function LayoutBase() {
+  const themeContext = useThemeContext();
+  if (!themeContext) {
+    console.log("themecontext Null");
+    return null;
+  }
+  const theme = themeContext[0];
   return (
-    <LanguageProvider>
-      <LayoutProvider>
-        <ThemeProvider>
-          <header>
-            <NavBar />
-          </header>
-          <main>
-            <Outlet />
-          </main>
-          <footer>
-            <h2>temp</h2>
-          </footer>
-        </ThemeProvider>
-      </LayoutProvider>
-    </LanguageProvider>
+    <div className={theme}>
+      <header>
+        <NavBar />
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <footer>
+        <h2>temp</h2>
+      </footer>
+    </div>
   );
 }

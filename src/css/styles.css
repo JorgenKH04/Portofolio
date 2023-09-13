@@ -1,3 +1,7 @@
 svg {
   width: 20px;
 }
+
+.dark {
+  background-color: black;
+}
