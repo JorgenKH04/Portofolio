@@ -1,16 +1,10 @@
 import { NavBar } from "../components/Header/NavBar";
 
-export function LayoutBase({
-  children,
-  layout,
-}: {
-  children: React.ReactNode;
-  layout: string;
-}) {
+export function LayoutBase({ children }: { children: React.ReactNode }) {
   return (
     <>
       <header>
-        <NavBar layout={layout} />
+        <NavBar />
       </header>
       <main>{children}</main>
       <footer>

@@ -1,14 +1,17 @@
-import { useLanguageContext } from "../../contexts/languagecontext";
+import { useLanguageContext } from "../../contexts/languageContext";
+import { useLayoutContext } from "../../contexts/layoutContext";
 import * as mov1 from "../../assets/animation/dark-mode-animation.webm";
 
-export function HeroSection({ layout }: { layout: string }) {
+export function HeroSection() {
+  const layoutContext = useLayoutContext();
+  const mobile = layoutContext;
   const languageContext = useLanguageContext();
   if (!languageContext) return null;
   const lang = languageContext[0];
 
   return (
     <div>
-      {layout === "mobile" ? null : (
+      {mobile ? null : (
         // rome-ignore lint/a11y/useMediaCaption: <explanation>
         <video loop autoPlay width="100%" height="100%">
           <source src={mov1.default} />
