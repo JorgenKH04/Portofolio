@@ -1,25 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import { LayoutBase } from "./layout/LayoutBase";
-import { HeroSection } from "./components/Header/HeroSection";
-import { AboutMeSection } from "./components/Main/AboutMeSection";
-import { MySkills } from "./components/Main/MySkills";
-import { LanguageProvider } from "./contexts/languageContext";
-import { LayoutProvider } from "./contexts/layoutContext";
-import { ThemeProvider } from "./contexts/themeContext";
+import { Homepage } from "./Pages/Homepage";
 import "./css/styles.css";
 
 function App() {
   return (
-    <LanguageProvider>
-      <LayoutProvider>
-        <ThemeProvider>
-          <LayoutBase>
-            <HeroSection />
-            <AboutMeSection />
-            <MySkills />
-          </LayoutBase>
-        </ThemeProvider>
-      </LayoutProvider>
-    </LanguageProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LayoutBase />}>
+          <Route index element={<Homepage />} />
+          <Route path="aboutme" element={<h1>About me</h1>} />
+          <Route path="contact" element={<h1>Contact</h1>} />
+          <Route path="projects" element={<h1>Projects</h1>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

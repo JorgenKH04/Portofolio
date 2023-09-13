@@ -10,7 +10,6 @@ export function SettingsMenu() {
   const theme = themeContext[0];
   return (
     <div>
-      <h1>hello</h1>
       <button
         type="button"
         onClick={() => {

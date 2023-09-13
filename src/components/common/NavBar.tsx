@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { useLanguageContext } from "../../contexts/languageContext";
 import { useLayoutContext } from "../../contexts/layoutContext";
 import { SettingsMenu } from "../Header/SettingsMenu";
@@ -13,10 +15,10 @@ export function NavBar() {
     <>
       {mobile ? (
         <nav>
-          <div>
+          <Link to={"/"}>
             <img src={MyLogo.default} alt="My logo" />
             <h1>JORGEN</h1>
-          </div>
+          </Link>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 6 18 12">
             <title>menu</title>
             <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
@@ -25,13 +27,13 @@ export function NavBar() {
         </nav>
       ) : (
         <nav>
-          <div>
+          <Link to={"/"}>
             <img src={MyLogo.default} alt="My logo" />
             <h1>JORGEN</h1>
-          </div>
-          <a href="vg.no">{lang.aboutme}</a>
-          <a href="vg.no">{lang.contact}</a>
-          <a href="vg.no">{lang.projects}</a>
+          </Link>
+          <Link to={"aboutme"}>{lang.aboutme}</Link>
+          <Link to={"contact"}>{lang.contact}</Link>
+          <Link to={"projects"}>{lang.projects}</Link>
           <SettingsMenu />
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="2.25 2 19.5 20">
             <title>cog</title>
