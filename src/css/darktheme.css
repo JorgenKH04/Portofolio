@@ -1,0 +1,16 @@
+.dark {
+  background-color: #040815;
+
+  color: #b2d9f6;
+}
+
+.dark nav,
+.dark button,
+.dark .router_link_button {
+  background-color: #0a0e24;
+}
+
+.dark button,
+.router_link {
+  color: inherit;
+}

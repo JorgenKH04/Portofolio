@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Projects } from "../../../data/projects";
 import { useLayoutContext } from "../../../contexts/layoutContext";
 import { useLanguageContext } from "../../../contexts/languageContext";
@@ -11,24 +13,24 @@ export function PartialProjectList() {
   const isMobile = mobile ? 3 : 6;
 
   return (
-    <>
+    <div>
       {Projects.map((project, i) => {
+        const { name, img, shortdescription } = project;
         if (i >= isMobile) return;
         return (
-          <div key={project.name}>
-            <img
-              alt={`My project ${project.name}`}
-              src={project.img}
-              width="100px"
-            />
+          <div key={img}>
+            <img alt={`My project ${name}`} src={name} width="100px" />
             <div>
-              <h3>{project.name}</h3>
-              <p>{project.shortdescription}</p>
-              <button type="button">{lang.moreprojects}</button>
+              <h3>{name}</h3>
+              <p>{shortdescription}</p>
+              <button type="button">Info</button>
             </div>
           </div>
         );
       })}
-    </>
+      <Link className="router_link router_link_button" to={"projects"}>
+        {lang.moreprojects}
+      </Link>
+    </div>
   );
 }

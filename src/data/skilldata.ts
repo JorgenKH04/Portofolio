@@ -2,7 +2,8 @@ import * as htmlLogo from "../assets/skill-icons/HTML5 Logo Badge-cropped.svg";
 import * as cssLogo from "../assets/skill-icons/icons8-css-cropped.svg";
 import * as jsLogo from "../assets/skill-icons/icons8-javascript-cropped.svg";
 import * as tsLogo from "../assets/skill-icons/icons8-typescript-cropped.svg";
-import * as nextLogo from "../assets/skill-icons/next-js_1-cropped.svg";
+import * as nextLogoDark from "../assets/skill-icons/next-js-dark.svg";
+import * as nextLogoLight from "../assets/skill-icons/next-js-light.svg";
 import * as reactLogo from "../assets/skill-icons/icons8-react-cropped.svg";
 import * as csharpLogo from "../assets/skill-icons/icons8-c-sharp-logo-cropped.svg";
 import * as nodeLogo from "../assets/skill-icons/icons8-nodejs-cropped.svg";
@@ -19,7 +20,11 @@ export const frontEnd = [
 	{ img: cssLogo.default, tech: "CSS" },
 	{ img: jsLogo.default, tech: "Javascript" },
 	{ img: tsLogo.default, tech: "Typescript" },
-	{ img: nextLogo.default, tech: "Next.js" },
+	{
+		img: nextLogoLight.default,
+		imgLightMode: nextLogoDark.default,
+		tech: "Next.js",
+	},
 	{ img: reactLogo.default, tech: "React" },
 ];
 

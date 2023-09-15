@@ -21,9 +21,15 @@ export function Footer() {
 
       <div>
         <div>
-          <Link to={"aboutme"}>{lang.aboutme}</Link>
-          <Link to={"contact"}>{lang.contact}</Link>
-          <Link to={"projects"}>{lang.projects}</Link>
+          <Link className="router_link router_link_button" to={"aboutme"}>
+            {lang.aboutme}
+          </Link>
+          <Link className="router_link router_link_button" to={"contact"}>
+            {lang.contact}
+          </Link>
+          <Link className="router_link router_link_button" to={"projects"}>
+            {lang.projects}
+          </Link>
         </div>
         <div>
           <h1>MISC</h1>

@@ -9,59 +9,54 @@ export const Projects = [
              profile and achievements. It represents the site you are currently visiting, encompassing your
               skills, contact information, and a curated selection of notable projects.`,
 		img: weatherTrackr.default,
+		role: "",
 	},
 	{
-		name: "2",
+		name: "Taskbuddy",
 		github: "https://github.com/JorgenKH04/Portofolio",
 		netlify: "https://jorgen-portofolio.netlify.app/",
-		shortdescription: `This portfolio project serves as a comprehensive showcase of your professional
-             profile and achievements. It represents the site you are currently visiting, encompassing your
-              skills, contact information, and a curated selection of notable projects.`,
+		shortdescription: "Taskbuddy proj",
 		img: weatherTrackr.default,
+		role: "",
 	},
 	{
-		name: "3",
+		name: "Cryptify",
 		github: "https://github.com/JorgenKH04/Portofolio",
 		netlify: "https://jorgen-portofolio.netlify.app/",
-		shortdescription: `This portfolio project serves as a comprehensive showcase of your professional
-             profile and achievements. It represents the site you are currently visiting, encompassing your
-              skills, contact information, and a curated selection of notable projects.`,
+		shortdescription: "Cryptify proj",
 		img: weatherTrackr.default,
+		role: "",
 	},
 	{
-		name: "4",
+		name: "WeatherTrackr",
 		github: "https://github.com/JorgenKH04/Portofolio",
 		netlify: "https://jorgen-portofolio.netlify.app/",
-		shortdescription: `This portfolio project serves as a comprehensive showcase of your professional
-             profile and achievements. It represents the site you are currently visiting, encompassing your
-              skills, contact information, and a curated selection of notable projects.`,
+		shortdescription: "WeatherTrackr proj",
 		img: weatherTrackr.default,
+		role: "",
 	},
 	{
 		name: "5",
 		github: "https://github.com/JorgenKH04/Portofolio",
 		netlify: "https://jorgen-portofolio.netlify.app/",
-		shortdescription: `This portfolio project serves as a comprehensive showcase of your professional
-             profile and achievements. It represents the site you are currently visiting, encompassing your
-              skills, contact information, and a curated selection of notable projects.`,
+		shortdescription: "Empty proj",
 		img: weatherTrackr.default,
+		role: "",
 	},
 	{
 		name: "6",
 		github: "https://github.com/JorgenKH04/Portofolio",
 		netlify: "https://jorgen-portofolio.netlify.app/",
-		shortdescription: `This portfolio project serves as a comprehensive showcase of your professional
-             profile and achievements. It represents the site you are currently visiting, encompassing your
-              skills, contact information, and a curated selection of notable projects.`,
+		shortdescription: "Empty proj",
 		img: weatherTrackr.default,
+		role: "",
 	},
 	{
 		name: "7",
 		github: "https://github.com/JorgenKH04/Portofolio",
 		netlify: "https://jorgen-portofolio.netlify.app/",
-		shortdescription: `This portfolio project serves as a comprehensive showcase of your professional
-             profile and achievements. It represents the site you are currently visiting, encompassing your
-              skills, contact information, and a curated selection of notable projects.`,
+		shortdescription: "Empty proj",
 		img: weatherTrackr.default,
+		role: "",
 	},
 ];

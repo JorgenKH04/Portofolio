@@ -9,9 +9,9 @@ export function Logo() {
   if (!themeContext) return null;
   const theme = themeContext[0];
   return (
-    <Link to={"/"}>
+    <Link className="router_link" to={"/"}>
       <img
-        src={theme === "dark" ? darkLogo.default : lightLogo.default}
+        src={theme === "light" ? darkLogo.default : lightLogo.default}
         alt="My logo"
       />
       <h1>JORGEN</h1>

@@ -44,7 +44,6 @@ export function HeroSection() {
   return (
     <div>
       {AnimationLogic()}
-      <h1>{theme}</h1>
       <h1>{lang.greeting}</h1>
       <p>{lang.introparagraph1}</p>
       <button type="button">{lang.contactbutton}</button>
