@@ -48,7 +48,6 @@ function SkillShowcase({
   if (!img) return;
   let currentImage = img;
   if (imgLightMode && theme === "light") {
-    console.log(imgLightMode);
     currentImage = imgLightMode;
   }
   return (
