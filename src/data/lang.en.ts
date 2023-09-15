@@ -31,4 +31,5 @@ export class lang extends Array<string> {
 	icons8 = "icons8";
 	animation = "animation";
 	getintouch = "Get in touch";
+	language = "EN";
 }

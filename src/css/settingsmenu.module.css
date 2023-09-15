@@ -18,9 +18,12 @@
 }
 
 .menu_dropdown {
+  margin: 1em 0;
   width: 50%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border-radius: 6em;
 }
 
 .menu_themebtn {
@@ -34,9 +37,18 @@
 }
 
 .menu_dropdown button {
-  width: 100%;
+  font-size: 1.5rem;
+  width: 75%;
   background-color: none;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_dropdown svg {
+  height: 14px;
+  transition: rotate 0.4s;
 }
 
 .menu_iconcontainer {
@@ -50,4 +62,9 @@
 .menu_iconcontainer_sunicon {
   padding: 1em;
   border-radius: 50%;
+}
+
+.rotate {
+  rotate: 90deg;
+  transition: rotate 0.4s;
 }

@@ -29,6 +29,7 @@ export interface LanguageType extends Array<string> {
 	icons8: string;
 	animation: string;
 	getintouch: string;
+	language: string;
 }
 
 export class Language {
