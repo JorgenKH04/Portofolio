@@ -1,0 +1,35 @@
+.navbar {
+  position: relative;
+  padding: 1em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_rigth_linkdiv a {
+  font-size: 1.25rem;
+  margin-right: 2.5em;
+}
+
+.navbar svg {
+  height: 35px;
+}
+
+.navbar_logo {
+  height: 2000px;
+}
+
+.navbar_right {
+  display: flex;
+}
+
+.svgbutton {
+  padding: 0;
+  background-color: none;
+  border: none;
+}
+
+.navbar_right a:hover,
+.svgbutton:hover {
+  opacity: 70%;
+}

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { LayoutBase } from "./layout/LayoutBase";
-import { Homepage } from "./Pages/Homepage";
+import { Homepage } from "./components/Pages/Homepage";
 import { LanguageProvider } from "./contexts/languageContext";
 import { LayoutProvider } from "./contexts/layoutContext";
 import { ThemeProvider } from "./contexts/themeContext";

@@ -10,12 +10,15 @@ body {
   padding: 0;
 }
 
-svg {
-  width: 20px;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  color: #000000;
+button,
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
 .none {

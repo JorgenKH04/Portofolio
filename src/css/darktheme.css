@@ -6,11 +6,21 @@
 
 .dark nav,
 .dark button,
-.dark .router_link_button {
+.dark footer,
+.dark .router_link_button,
+.dark .menu_dropdown {
   background-color: #0a0e24;
 }
 
-.dark button,
-.router_link {
-  color: inherit;
+.dark .menu {
+  background-color: #0a0e24;
+  border-top: 1px solid #b2d9f6;
+}
+
+.dark .menu button {
+  background-color: #040815;
+}
+
+.dark .menu .menu_iconcontainer_moonicon {
+  background-color: #b2d9f6;
 }

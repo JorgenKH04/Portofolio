@@ -18,8 +18,8 @@ export function PartialProjectList() {
         const { name, img, shortdescription } = project;
         if (i >= isMobile) return;
         return (
-          <div key={img}>
-            <img alt={`My project ${name}`} src={name} width="100px" />
+          <div key={name}>
+            <img alt={`My project ${name}`} src={img} width="100px" />
             <div>
               <h3>{name}</h3>
               <p>{shortdescription}</p>
@@ -28,7 +28,7 @@ export function PartialProjectList() {
           </div>
         );
       })}
-      <Link className="router_link router_link_button" to={"projects"}>
+      <Link className="router_link_button" to={"projects"}>
         {lang.moreprojects}
       </Link>
     </div>

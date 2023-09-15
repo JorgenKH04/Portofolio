@@ -1,3 +1,25 @@
 .light {
-  color: #000000;
+  background-color: #bdcfff;
+  color: #000514;
+}
+
+.light nav,
+.light button,
+.light footer,
+.light .router_link_button,
+.light .menu_dropdown {
+  background-color: #9cb6fc;
+}
+
+.light .menu {
+  background-color: #9cb6fc;
+  border-top: 1px solid #000514;
+}
+
+.light .menu button {
+  background-color: #b2d9f6;
+}
+
+.light .menu .menu_iconcontainer_sunicon {
+  background-color: #000514;
 }
