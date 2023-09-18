@@ -22,9 +22,9 @@ export function HeroSection() {
         <video
           loop
           autoPlay
-          width="100%"
-          height="100%"
-          className={theme === "light" ? "animation" : "none"}
+          className={`${styles.hero_animation} ${
+            theme === "light" ? "animation" : "none"
+          }`}
         >
           <source src={lightAnimation.default} />
         </video>
@@ -32,9 +32,9 @@ export function HeroSection() {
         <video
           loop
           autoPlay
-          width="100%"
-          height="100%"
-          className={theme === "dark" ? "animation" : "none"}
+          className={`${styles.hero_animation} ${
+            theme === "dark" ? "animation" : "none"
+          }`}
         >
           <source src={darkAnimation.default} />
         </video>
@@ -45,11 +45,13 @@ export function HeroSection() {
   return (
     <div className={`hero ${styles.hero}`}>
       {AnimationLogic()}
-      <h1>{lang.greeting}</h1>
-      <p>{lang.introparagraph1}</p>
-      <div className={styles.hero_buttons}>
-        <button type="button">{lang.contactbutton}</button>
-        <button type="button">{lang.projectsbutton}</button>
+      <div className={`hero_intro ${styles.hero_intro}`}>
+        <h1>{lang.greeting}</h1>
+        <p>{lang.introparagraph1}</p>
+        <div className={styles.hero_buttons}>
+          <button type="button">{lang.contactbutton}</button>
+          <button type="button">{lang.projectsbutton}</button>
+        </div>
       </div>
     </div>
   );

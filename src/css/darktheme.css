@@ -14,10 +14,14 @@
 
 .dark .menu {
   background-color: #0a0e24;
-  border-top: 1px solid #b2d9f6;
+  border-color: #b2d9f6;
 }
 
 .dark .menu button {
+  background-color: #040815;
+}
+
+.dark .menu_dropdown {
   background-color: #040815;
 }
 
@@ -31,4 +35,11 @@
 
 .dark .aboutme_attributes p {
   background-color: #0a0e24;
+}
+
+@media (width > 1000px) {
+  .dark .hero_intro {
+    padding: 2em 4em;
+    background-color: rgba(0, 5, 20, 0.3);
+  }
 }

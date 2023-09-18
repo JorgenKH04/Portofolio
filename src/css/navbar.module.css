@@ -4,6 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
+}
+
+.navbar_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar_rigth_linkdiv a {
@@ -32,4 +39,16 @@
 .navbar_right a:hover,
 .svgbutton:hover {
   opacity: 70%;
+}
+
+@media (width > 1000px) {
+  .navbar {
+    position: fixed;
+    top: 2em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100em;
+    padding: 0 4em;
+    border-radius: 4em;
+  }
 }

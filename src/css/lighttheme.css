@@ -13,7 +13,7 @@
 
 .light .menu {
   background-color: #9cb6fc;
-  border-top: 1px solid #000514;
+  border-color: #000514;
 }
 
 .light .menu button {
@@ -23,11 +23,22 @@
 .light .menu .menu_iconcontainer_sunicon {
   background-color: #000514;
 }
-
+/* background-color: #9fb8f9; */
 .light .hero {
-  background-color: #9fb8f9;
+  background-color: #b1d8f5;
+}
+
+.light .hero button {
+  background-color: #b6c8f7;
 }
 
 .light .aboutme_attributes p {
   background-color: #9cb6fc;
+}
+
+@media (width > 1000px) {
+  .light .hero_intro {
+    padding: 2em 4em;
+    background-color: rgba(177, 216, 245, 0.3);
+  }
 }
