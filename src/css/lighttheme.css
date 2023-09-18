@@ -8,7 +8,7 @@
 .light footer,
 .light .router_link_button,
 .light .menu_dropdown {
-  background-color: #9cb6fc;
+  background-color: #bdcfff;
 }
 
 .light .menu {
@@ -22,4 +22,12 @@
 
 .light .menu .menu_iconcontainer_sunicon {
   background-color: #000514;
+}
+
+.light .hero {
+  background-color: #9fb8f9;
+}
+
+.light .aboutme_attributes p {
+  background-color: #9cb6fc;
 }

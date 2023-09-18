@@ -1,11 +1,13 @@
 .menu {
+  overflow: hidden;
   border-top: 1px solid;
-  width: 100%;
   position: absolute;
   display: flex;
   align-items: center;
   top: 120px;
   right: 0px;
+  left: 0px;
+  bottom: -5500px;
   flex-direction: column;
   padding: 1em 4em;
 }
@@ -38,6 +40,7 @@
 
 .menu_dropdown button {
   font-size: 1.5rem;
+  min-width: 100px;
   width: 75%;
   background-color: none;
   border: none;

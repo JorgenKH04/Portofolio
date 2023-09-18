@@ -3,6 +3,7 @@ import { useLayoutContext } from "../../../contexts/layoutContext";
 import { useThemeContext } from "../../../contexts/themeContext";
 import * as darkAnimation from "../../../assets/animation/dark-mode-animation.webm";
 import * as lightAnimation from "../../../assets/animation/light-mode-animation.webm";
+import styles from "../../../css/Homepage/Herosection.module.css";
 
 export function HeroSection() {
   const themeContext = useThemeContext();
@@ -42,12 +43,14 @@ export function HeroSection() {
   }
 
   return (
-    <div>
+    <div className={`hero ${styles.hero}`}>
       {AnimationLogic()}
       <h1>{lang.greeting}</h1>
       <p>{lang.introparagraph1}</p>
-      <button type="button">{lang.contactbutton}</button>
-      <button type="button">{lang.projectsbutton}</button>
+      <div className={styles.hero_buttons}>
+        <button type="button">{lang.contactbutton}</button>
+        <button type="button">{lang.projectsbutton}</button>
+      </div>
     </div>
   );
 }

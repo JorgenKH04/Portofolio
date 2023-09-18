@@ -24,3 +24,11 @@
 .dark .menu .menu_iconcontainer_moonicon {
   background-color: #b2d9f6;
 }
+
+.dark .hero {
+  background-color: #000514;
+}
+
+.dark .aboutme_attributes p {
+  background-color: #0a0e24;
+}

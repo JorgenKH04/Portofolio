@@ -1,0 +1,61 @@
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0;
+  text-align: left;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.hero h1,
+.hero p,
+.hero_buttons {
+  margin: 0;
+  width: 66%;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.1em;
+  letter-spacing: -2%;
+}
+
+.hero p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.hero_buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.hero button {
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  border-radius: 0.2em;
+}
+
+@media (width < 600px) {
+  .hero h1,
+  .hero p,
+  .hero_buttons {
+    width: 70%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .hero button {
+    font-size: 1.25rem;
+  }
+}
