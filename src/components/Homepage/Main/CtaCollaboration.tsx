@@ -1,4 +1,5 @@
 import { useLanguageContext } from "../../../contexts/languageContext";
+import { Web3Form } from "../../common/Web3Form";
 
 export function CtaCollaboration() {
   const languageContext = useLanguageContext();
@@ -13,6 +14,7 @@ export function CtaCollaboration() {
         {lang.collaborationpart2}
       </p>
       <button type="button">{lang.ctacontact}</button>
+      <Web3Form />
     </div>
   );
 }

@@ -32,4 +32,7 @@ export class lang extends Array<string> {
 	animation = "animation";
 	getintouch = "Get in touch";
 	language = "EN";
+	formname = "Your Name";
+	formemail = "Your Email";
+	formmessage = "Leave a message.";
 }

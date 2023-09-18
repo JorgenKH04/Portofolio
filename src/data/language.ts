@@ -30,6 +30,9 @@ export interface LanguageType extends Array<string> {
 	animation: string;
 	getintouch: string;
 	language: string;
+	formname: string;
+	formemail: string;
+	formmessage: string;
 }
 
 export class Language {
