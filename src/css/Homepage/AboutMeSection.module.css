@@ -64,6 +64,28 @@
 }
 
 .aboutme_paragraphs p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5em;
+}
+
+@media (width < 600px) {
+  .aboutme h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutme_attributes {
+    width: 70%;
+  }
+  .aboutme_attributes p {
+    font-size: 1rem;
+  }
+
+  .aboutme_paragraphs {
+    width: 70%;
+  }
+
+  .aboutme_paragraphs p {
+    font-size: 0.9rem;
+    line-height: 1.5em;
+  }
 }
