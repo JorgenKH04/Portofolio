@@ -41,6 +41,13 @@
   border-bottom: solid 1px #b2d9f6;
 }
 
+.dark .cta_form input,
+.dark .cta_form textarea {
+  background-color: #000514;
+  border: 1px solid #b2d9f6;
+  color: #b2d9f6;
+}
+
 @media (width > 1000px) {
   .dark .hero_intro {
     padding: 2em 4em;

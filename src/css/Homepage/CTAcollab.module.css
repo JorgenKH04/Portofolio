@@ -1,0 +1,109 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  margin: auto;
+  text-align: left;
+  gap: 2em;
+}
+
+.cta h2,
+.cta p,
+.cta_form {
+  width: 100%;
+  margin: 0;
+}
+
+.cta h2 {
+  font-size: 1.5rem;
+}
+
+.cta p {
+  font-size: 1rem;
+}
+
+.cta span {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.cta_button {
+  width: 100%;
+}
+
+.cta button {
+  font-size: 1.25rem;
+  border: none;
+  width: 50%;
+  padding: 1em;
+  margin-bottom: 4em;
+  border-radius: 0.2em;
+}
+
+.cta_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta_form input,
+.cta_form textarea {
+  margin: 1em 0;
+  outline: none;
+  padding: 1em;
+  font-size: 1rem;
+}
+
+.cta_form textarea {
+  height: 10em;
+  margin-bottom: 1em;
+}
+
+@media (width > 1000px) {
+  .cta {
+    width: 40%;
+    margin: 12em auto;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .cta span {
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+
+  .cta_button {
+    width: 100%;
+  }
+
+  .cta button {
+    font-size: 1.25rem;
+    border: none;
+    width: 50%;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 0.2em;
+  }
+
+  .cta_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta_form input,
+  .cta_form textarea {
+    margin: 1em 0;
+    outline: none;
+    padding: 1em;
+    font-size: 1rem;
+  }
+
+  .cta_form textarea {
+    height: 10em;
+  }
+}

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import styles from "../../css/settingsmenu.module.css";
+import styles from "../../css/common/settingsmenu.module.css";
 import { useLanguageContext } from "../../contexts/languageContext";
 import { useThemeContext } from "../../contexts/themeContext";
 import { useLayoutContext } from "../../contexts/layoutContext";

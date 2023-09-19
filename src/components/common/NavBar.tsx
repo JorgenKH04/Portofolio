@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import styles from "../../css/navbar.module.css";
+import styles from "../../css/common/navbar.module.css";
 import { useLanguageContext } from "../../contexts/languageContext";
 import { useLayoutContext } from "../../contexts/layoutContext";
 import { useThemeContext } from "../../contexts/themeContext";

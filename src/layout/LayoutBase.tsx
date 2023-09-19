@@ -4,8 +4,8 @@ import { NavBar } from "../components/common/NavBar";
 import { Footer } from "../components/common/Footer";
 import { useThemeContext } from "../contexts/themeContext";
 import "../css/styles.css";
-import "../css/darktheme.css";
-import "../css/lighttheme.css";
+import "../css/common/darktheme.css";
+import "../css/common/lighttheme.css";
 
 export function LayoutBase() {
   const themeContext = useThemeContext();

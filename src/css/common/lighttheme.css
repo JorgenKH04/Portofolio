@@ -21,7 +21,7 @@
 }
 
 .light .menu button {
-  background-color: #b2d9f6;
+  background-color: #a2c5e0;
 }
 
 .light .menu .menu_iconcontainer_sunicon {
@@ -42,6 +42,13 @@
 
 .light .myskills h3 {
   border-bottom: solid 1px #000514;
+}
+
+.light .cta_form input,
+.light .cta_form textarea {
+  background-color: #b1d8f5;
+  border: 1px solid #000514;
+  color: #000514;
 }
 
 @media (width > 1000px) {
