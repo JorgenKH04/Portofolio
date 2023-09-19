@@ -37,6 +37,10 @@ export function Footer() {
         </div>
         <div>
           <h1>MISC</h1>
+          <p>Attribution</p>
+          <a href="#">Icons8</a>
+          <a href="#">Animation</a>
+          <a href="#">Web3Forms</a>
         </div>
         <div>
           <h3>GET IN TOUCH</h3>
