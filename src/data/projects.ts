@@ -1,4 +1,6 @@
 import * as weatherTrackr from "../assets/project-images/weatherTrackr.png";
+import * as cryptify from "../assets/project-images/cryptify.png";
+import * as taskbuddy from "../assets/project-images/taskbuddy.png";
 
 export const Projects = [
 	{
@@ -15,16 +17,21 @@ export const Projects = [
 		name: "Taskbuddy",
 		github: "https://github.com/JorgenKH04/Portofolio",
 		netlify: "https://jorgen-portofolio.netlify.app/",
-		shortdescription: "Taskbuddy proj",
-		img: weatherTrackr.default,
+		shortdescription: `Discover a powerful task management app that allows you to effortlessly 
+			create, track, and organize your tasks. Seamlessly save tasks to local storage, 
+			mark them as completed or incomplete, and conveniently sort them alphabetically or by creation time. 
+			Stay productive and organized with this intuitive task management solution.`,
+		img: taskbuddy.default,
 		role: "",
 	},
 	{
 		name: "Cryptify",
 		github: "https://github.com/JorgenKH04/Portofolio",
 		netlify: "https://jorgen-portofolio.netlify.app/",
-		shortdescription: "Cryptify proj",
-		img: weatherTrackr.default,
+		shortdescription: `An all-in-one web app for base64 encoding, hex-text conversion, 
+			MD5/SHA1 hashing, URL encoding/decoding, JSON web tokens, 
+			case modification, and whitespace removal.`,
+		img: cryptify.default,
 		role: "",
 	},
 	{
