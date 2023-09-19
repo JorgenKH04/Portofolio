@@ -4,7 +4,13 @@ import { useState } from "react";
 
 import { useLanguageContext } from "../../contexts/languageContext";
 //
-export function Web3Form() {
+export function Web3Form({
+  compClass,
+  isFormOpen,
+}: {
+  compClass: string;
+  isFormOpen: boolean;
+}) {
   const languageContext = useLanguageContext();
   const lang = languageContext ? languageContext[0] : null;
   const { register, handleSubmit, reset } = useForm({
@@ -41,8 +47,9 @@ export function Web3Form() {
     },
   });
 
+  if (!isFormOpen) return null;
   return (
-    <form id="test" onSubmit={handleSubmit(onSubmit)}>
+    <form className={compClass} id="test" onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="name">{lang?.formname}</label>
       <input
         id="name"
