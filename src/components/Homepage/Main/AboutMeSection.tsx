@@ -8,17 +8,21 @@ export function AboutMeSection() {
   return (
     <div className={styles.aboutme}>
       <h2>{lang.aboutme}</h2>
-      <div className={`aboutme_attributes ${styles.aboutme_attributes}`}>
-        <p>{lang.communicator}</p>
-        <p>{lang.flexible}</p>
-        <p>{lang.criticalthinker}</p>
-        <p>{lang.problemsolver}</p>
-        <p>{lang.organized}</p>
-        <p>{lang.adaptable}</p>
-      </div>
-      <div className={styles.aboutme_paragraphs}>
-        <p>{lang.introparagraph2}</p>
-        <p>{lang.introparagraph3}</p>
+      <div className={styles.aboutme_content}>
+        <div
+          className={`aboutme_attributes ${styles.aboutme_content_attributes}`}
+        >
+          <p>{lang.communicator}</p>
+          <p>{lang.flexible}</p>
+          <p>{lang.criticalthinker}</p>
+          <p>{lang.problemsolver}</p>
+          <p>{lang.organized}</p>
+          <p>{lang.adaptable}</p>
+        </div>
+        <div className={styles.aboutme_content_paragraphs}>
+          <p>{lang.introparagraph2}</p>
+          <p>{lang.introparagraph3}</p>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,78 @@
+.myskills {
+  margin-top: 4em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.myskills h2 {
+  font-size: 1.5rem;
+}
+
+.myskills_skillgroups {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.myskills_skillgroups_group {
+  width: 75%;
+  display: grid;
+  grid-template:
+    "header header" 1fr
+    "skill1 skill2" 1fr
+    "skill3 skill4" 1fr
+    "skill5 skill6" 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.myskills_skillgroups_group h3 {
+  width: 6em;
+  padding-bottom: 0.5em;
+  grid-area: header;
+  font-size: 1.25rem;
+}
+
+.myskills_skillgroups_group p {
+  font-size: 0.75rem;
+}
+
+.myskills_skillgroups_group img {
+  height: 70px;
+  width: 200px;
+}
+
+@media (width > 1000px) {
+  .myskills {
+    margin: 8em 0;
+  }
+
+  .myskills h2 {
+    grid-area: h2;
+    font-size: 2rem;
+  }
+
+  .myskills_skillgroups {
+    flex-direction: row;
+  }
+
+  .myskills_skillgroups_group h3 {
+    width: 6em;
+    padding-bottom: 0.5em;
+    font-size: 1.5rem;
+  }
+
+  .myskills_skillgroups_group p {
+    font-size: 1rem;
+  }
+
+  .myskills_skillgroups_group img {
+    height: 70px;
+    width: 200px;
+  }
+}

@@ -36,6 +36,7 @@
 
 .menu button {
   border: none;
+  box-shadow: 0 0;
 }
 
 .menu_dropdown button {

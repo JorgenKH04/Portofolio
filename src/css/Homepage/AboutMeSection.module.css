@@ -10,11 +10,18 @@
 
 .aboutme h2 {
   font-size: 2rem;
-  line-height: 1.2em;
   letter-spacing: -1%;
 }
 
-.aboutme_attributes {
+.aboutme_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  width: 90%;
+}
+
+.aboutme_content_attributes {
   width: 80%;
   display: grid;
   gap: 1em;
@@ -26,26 +33,26 @@
     "five six six" 1fr / 1fr 1fr 1fr;
 }
 
-.aboutme_attributes p:nth-child(1) {
+.aboutme_content_attributes p:nth-child(1) {
   grid-area: one;
 }
-.aboutme_attributes p:nth-child(2) {
+.aboutme_content_attributes p:nth-child(2) {
   grid-area: two;
 }
-.aboutme_attributes p:nth-child(3) {
+.aboutme_content_attributes p:nth-child(3) {
   grid-area: three;
 }
-.aboutme_attributes p:nth-child(4) {
+.aboutme_content_attributes p:nth-child(4) {
   grid-area: four;
 }
-.aboutme_attributes p:nth-child(5) {
+.aboutme_content_attributes p:nth-child(5) {
   grid-area: five;
 }
-.aboutme_attributes p:nth-child(6) {
+.aboutme_content_attributes p:nth-child(6) {
   grid-area: six;
 }
 
-.aboutme_attributes p {
+.aboutme_content_attributes p {
   width: 100%;
   margin: 0;
   display: flex;
@@ -53,18 +60,18 @@
   justify-content: center;
   border-radius: 4em;
   padding: 1.25em;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
-.aboutme_paragraphs {
+.aboutme_content_paragraphs {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.aboutme_paragraphs p {
-  font-size: 1.25rem;
+.aboutme_content_paragraphs {
+  font-size: 1rem;
   line-height: 1.5em;
 }
 
@@ -73,19 +80,45 @@
     font-size: 1.5rem;
   }
 
-  .aboutme_attributes {
+  .aboutme_content_attributes {
     width: 70%;
   }
-  .aboutme_attributes p {
+  .aboutme_content_attributes p {
+    font-size: 0.75rem;
+  }
+
+  .aboutme_content_paragraphs {
+    width: 70%;
+  }
+
+  .aboutme_content_paragraphs {
+    font-size: 0.75rem;
+  }
+}
+
+@media (width > 1000px) {
+  .aboutme h2 {
+    font-size: 2rem;
+  }
+
+  .aboutme_content {
+    justify-content: center;
+    flex-direction: row;
+    gap: 6em;
+  }
+
+  .aboutme_content_attributes {
+    width: 40%;
+  }
+  .aboutme_content_attributes p {
     font-size: 1rem;
   }
 
-  .aboutme_paragraphs {
-    width: 70%;
+  .aboutme_content_paragraphs {
+    width: 40%;
   }
 
-  .aboutme_paragraphs p {
+  .aboutme_content_paragraphs {
     font-size: 0.9rem;
-    line-height: 1.5em;
   }
 }

@@ -1,32 +1,35 @@
 import { frontEnd, backEnd, design } from "../../../data/skilldata";
 import { useThemeContext } from "../../../contexts/themeContext";
+import styles from "../../../css/Homepage/MySkills.module.css";
 
 export function MySkills() {
   return (
-    <div>
+    <div className={`myskills ${styles.myskills}`}>
       <h2>My Skills</h2>
-      <div>
-        <h3>Front-End</h3>
-        {frontEnd.map(({ img, tech, imgLightMode }) => (
-          <SkillShowcase
-            key={tech}
-            img={img}
-            tech={tech}
-            imgLightMode={imgLightMode}
-          />
-        ))}
-      </div>
-      <div>
-        <h3>Back-End</h3>
-        {backEnd.map(({ img, tech }) => (
-          <SkillShowcase key={tech} img={img} tech={tech} />
-        ))}
-      </div>
-      <div>
-        <h3>Design</h3>
-        {design.map(({ img, tech }) => (
-          <SkillShowcase key={tech} img={img} tech={tech} />
-        ))}
+      <div className={styles.myskills_skillgroups}>
+        <div className={styles.myskills_skillgroups_group}>
+          <h3>Front-End</h3>
+          {frontEnd.map(({ img, tech, imgLightMode }) => (
+            <SkillShowcase
+              key={tech}
+              img={img}
+              tech={tech}
+              imgLightMode={imgLightMode}
+            />
+          ))}
+        </div>
+        <div className={styles.myskills_skillgroups_group}>
+          <h3>Back-End</h3>
+          {backEnd.map(({ img, tech }) => (
+            <SkillShowcase key={tech} img={img} tech={tech} />
+          ))}
+        </div>
+        <div className={styles.myskills_skillgroups_group}>
+          <h3>Design</h3>
+          {design.map(({ img, tech }) => (
+            <SkillShowcase key={tech} img={img} tech={tech} />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -53,7 +56,7 @@ function SkillShowcase({
   return (
     <div>
       {/* Remove height from this */}
-      <img height="40px" src={currentImage} alt={`${tech}'s logo`} />
+      <img src={currentImage} alt={`${tech}'s logo`} />
       <p>{tech}</p>
     </div>
   );

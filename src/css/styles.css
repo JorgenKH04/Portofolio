@@ -27,6 +27,7 @@ h1 {
 
 h2 {
   font-weight: 700;
+  line-height: 1.2em;
 }
 
 h3 {
@@ -35,6 +36,7 @@ h3 {
 
 p {
   font-weight: 500;
+  line-height: 1.5em;
 }
 
 .none {

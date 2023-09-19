@@ -11,7 +11,7 @@ export class lang extends Array<string> {
 	projects = "Prosjekter";
 	projectsbutton = "Mine prosjekter";
 	aboutme = "Om meg";
-	communicator = "Good kommunikasjon";
+	communicator = "God kommunikasjon";
 	flexible = "Fleksibel";
 	criticalthinker = "Kritisk tenker";
 	problemsolver = "Problemløser";

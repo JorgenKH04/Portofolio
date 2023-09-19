@@ -1,5 +1,5 @@
 .light {
-  background-color: #bdcfff;
+  background-color: #7faccf;
   color: #000514;
 }
 
@@ -8,7 +8,11 @@
 .light footer,
 .light .router_link_button,
 .light .menu_dropdown {
-  background-color: #bdcfff;
+  background-color: #a2c5e0;
+}
+
+.light nav button {
+  box-shadow: none;
 }
 
 .light .menu {
@@ -33,7 +37,11 @@
 }
 
 .light .aboutme_attributes p {
-  background-color: #9cb6fc;
+  background-color: #a2c5e0;
+}
+
+.light .myskills h3 {
+  border-bottom: solid 1px #000514;
 }
 
 @media (width > 1000px) {
