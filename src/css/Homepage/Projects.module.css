@@ -1,0 +1,62 @@
+.projects {
+  width: 80%;
+  margin: 4em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.projects button,
+.projects a {
+  text-align: center;
+  font-size: 1.25rem;
+  border: none;
+  padding: 0.5em 1.5em;
+}
+
+.projects_project {
+  background-blend-mode: multiply;
+  background-color: #202020;
+  background-position: center;
+  background-size: cover;
+  min-height: 350px;
+}
+
+.projects_project_info {
+  padding: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+}
+
+.projects_project p,
+h3 {
+  margin: 0;
+}
+
+.projects_project p {
+  font-size: 1rem;
+  width: 75%;
+}
+
+.projects_project h3 {
+  font-size: 1.5rem;
+}
+
+.projects_project button {
+  border-radius: 0.2em;
+}
+
+.projects_pc {
+  background-color: rgba(0, 0, 0, 0);
+  /* Set background color to this on hover */
+  /* background-color: #202020; */
+}
