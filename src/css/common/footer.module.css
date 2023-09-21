@@ -1,0 +1,49 @@
+.footer,
+.footer_main_directory,
+.footer_main_misc,
+.footer_main_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+}
+
+.footer svg {
+  width: 40px;
+}
+
+.footer_main {
+  display: grid;
+  grid-template:
+    "directory misc" 300px
+    "contact contact" 200px / 50%;
+}
+
+.footer_main_directory,
+.footer_main_misc {
+  padding: 2em;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer_main_directory {
+  grid-area: directory;
+}
+
+.footer_main_misc {
+  grid-area: misc;
+}
+
+.footer_main_misc h1 {
+  font-size: 1.5rem;
+}
+
+.footer_main_misc a {
+  font-size: 1rem;
+}
+
+.footer_main_contact {
+  grid-area: contact;
+}
