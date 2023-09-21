@@ -4,6 +4,7 @@ import { Logo } from "./Logo";
 import { useLayoutContext } from "../../contexts/layoutContext";
 import { useLanguageContext } from "../../contexts/languageContext";
 import { useThemeContext } from "../../contexts/themeContext";
+import styles from "../../css/common/footer.module.css";
 
 export function Footer() {
   const layoutContext = useLayoutContext();
@@ -15,7 +16,7 @@ export function Footer() {
   const mobile = layoutContext;
   const svgColor = theme === "dark" ? "#B2D9F6" : "#000514";
   return (
-    <>
+    <div className={styles.footer}>
       {mobile ? null : (
         <div>
           <Logo />
@@ -23,8 +24,8 @@ export function Footer() {
         </div>
       )}
 
-      <div>
-        <div>
+      <div className={styles.footer_main}>
+        <div className={styles.footer_main_directory}>
           <Link className="router_link_button" to={"aboutme"}>
             {lang.aboutme}
           </Link>
@@ -35,16 +36,28 @@ export function Footer() {
             {lang.projects}
           </Link>
         </div>
-        <div>
+        <div className={styles.footer_main_misc}>
           <h1>MISC</h1>
-          <p>Attribution</p>
-          <a href="#">Icons8</a>
-          <a href="#">Animation</a>
-          <a href="#">Web3Forms</a>
+          <Link className="router_link_button" to={"attribution"}>
+            {lang.attribution}
+          </Link>
+          <a target="_blank" rel="noreferrer" href="https://icons8.com/">
+            Icons8
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.pexels.com/video/lines-and-shapes-in-a-black-background-4990317/"
+          >
+            Animation
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://web3forms.com/">
+            Web3Forms
+          </a>
         </div>
-        <div>
+        <div className={styles.footer_main_contact}>
           <h3>GET IN TOUCH</h3>
-          <p>MY EMAIL</p>
+          <p>jorgenkh04.kodehode@gmail.com</p>
           <div>
             <a href="https://github.com/JorgenKH04" target="blank_">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 46 44.85">
@@ -87,6 +100,6 @@ export function Footer() {
           <small>@2023 Jorgen</small>
         </div>
       )}
-    </>
+    </div>
   );
 }
