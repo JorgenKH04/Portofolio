@@ -3,7 +3,12 @@
   margin: 4em auto;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1em;
+  overflow: hidden;
+}
+
+.projects:has(.projects_pc) {
+  width: 90%;
 }
 
 .projects h2 {
@@ -20,10 +25,13 @@
 }
 
 .projects_project {
+  border-radius: 2em;
+  margin: 1em auto;
   background-blend-mode: multiply;
   background-color: #202020;
+  border: 1px double #202020;
   background-position: center;
-  background-size: cover;
+  background-size: 101% 101%;
   min-height: 350px;
 }
 
@@ -56,7 +64,44 @@ h3 {
 }
 
 .projects_pc {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 45%) / repeat(3, 32%);
+  gap: 4em 2em;
+  margin: 0;
+}
+
+.projects_pc .projects_project {
+  margin: 0;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0);
-  /* Set background color to this on hover */
-  /* background-color: #202020; */
+  border: none;
+}
+
+.projects_pc .projects_project_info {
+  padding: 2em;
+  height: 100%;
+  justify-content: space-between;
+  visibility: hidden;
+}
+
+.projects_pc .projects_project:hover {
+  visibility: visible;
+  background-color: #202020;
+  border: 1px double #202020;
+  background-blend-mode: multiply;
+}
+
+.projects_pc .projects_project:hover .projects_project_info {
+  visibility: visible;
+}
+
+@media (width > 1000px) {
+  .projects_morebtn {
+    margin: 0 auto;
+    width: 50%;
+  }
 }
