@@ -7,7 +7,8 @@
 .light button,
 .light footer,
 .light .router_link_button,
-.light .menu_dropdown {
+.light .menu_dropdown,
+.light .projects_project_info a {
   background-color: #a2c5e0;
 }
 
@@ -49,6 +50,11 @@
   background-color: #b1d8f5;
   border: 1px solid #000514;
   color: #000514;
+}
+
+.light .projects_project_info p,
+.light .projects_project_info h3 {
+  color: #b2d9f6;
 }
 
 @media (width > 1000px) {

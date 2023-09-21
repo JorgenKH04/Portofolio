@@ -8,7 +8,8 @@
 .dark button,
 .dark footer,
 .dark .router_link_button,
-.dark .menu_dropdown {
+.dark .menu_dropdown,
+.dark .projects_project_info a {
   background-color: #0a0e24;
 }
 
