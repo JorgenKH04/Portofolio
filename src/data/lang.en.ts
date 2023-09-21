@@ -35,4 +35,5 @@ export class lang extends Array<string> {
 	formname = "Your Name";
 	formemail = "Your Email";
 	formmessage = "Leave a message.";
+	formsubmit = "Submit";
 }

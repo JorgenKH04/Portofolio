@@ -35,4 +35,5 @@ export class lang extends Array<string> {
 	formname = "Navnet ditt";
 	formemail = "Eposten din";
 	formmessage = "Send meg en melding.";
+	formsubmit = "Send";
 }

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { useLanguageContext } from "../../../contexts/languageContext";
 import { useLayoutContext } from "../../../contexts/layoutContext";
 import { useThemeContext } from "../../../contexts/themeContext";
@@ -49,8 +51,10 @@ export function HeroSection() {
         <h1>{lang.greeting}</h1>
         <p>{lang.introparagraph1}</p>
         <div className={styles.hero_buttons}>
-          <button type="button">{lang.contactbutton}</button>
-          <button type="button">{lang.projectsbutton}</button>
+          <Link to={"/contact"} type="button">
+            {lang.contactbutton}
+          </Link>
+          <Link to={"/projects"}>{lang.projectsbutton}</Link>
         </div>
       </div>
     </div>

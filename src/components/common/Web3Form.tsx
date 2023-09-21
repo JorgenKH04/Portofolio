@@ -40,7 +40,7 @@ export function Web3Form({
       });
       setTimeout(() => {
         setFormSubmitted("");
-      }, 5000);
+      }, 2000);
     },
     onError: (message) => {
       console.log(message);
@@ -49,7 +49,7 @@ export function Web3Form({
 
   if (!isFormOpen) return null;
   return (
-    <form className={compClass} id="test" onSubmit={handleSubmit(onSubmit)}>
+    <form className={compClass} onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="name">{lang?.formname}</label>
       <input
         id="name"
@@ -89,7 +89,7 @@ export function Web3Form({
           },
         })}
       />
-      <button type="submit">Submit Form</button>
+      <button type="submit">{lang?.formsubmit}</button>
       {/* Swap this to reusable modal popup in the future */}
       {!formSubmitted ? null : (
         <div>

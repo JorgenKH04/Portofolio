@@ -10,7 +10,7 @@ export function CtaCollaboration() {
   if (!languageContext) return null;
   const lang = languageContext[0];
   return (
-    <div className={styles.cta}>
+    <div className={`cta ${styles.cta}`}>
       <h2>{lang.collaborationheader}</h2>
       <p>
         {lang.collaborationpart1}
