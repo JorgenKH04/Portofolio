@@ -16,26 +16,31 @@ export function PartialProjectList() {
   return (
     <div className={styles.projects}>
       <h2>Projects</h2>
-      {Projects.map((project, i) => {
-        const { name, img, shortdescription } = project;
-        if (i >= renderedProjects) return;
-        return (
-          <div
-            style={{ backgroundImage: `url(${img})` }}
-            className={`${
-              mobile ? styles.projects_mobile : styles.projects_pc
-            } ${styles.projects_project}`}
-            key={name}
-          >
-            <div className={styles.projects_project_info}>
-              <h3>{name}</h3>
-              <p>{shortdescription}</p>
-              <button type="button">Info</button>
+      <div className={mobile ? styles.projects_mobile : styles.projects_pc}>
+        {Projects.map((project, i) => {
+          const { name, img, shortdescription } = project;
+          if (i >= renderedProjects) return;
+          return (
+            <div
+              style={{ backgroundImage: `url(${img})` }}
+              className={`${styles.projects_project}`}
+              key={name}
+            >
+              <div
+                className={`${styles.projects_project_info} projects_project_info`}
+              >
+                <h3>{name}</h3>
+                <p>{shortdescription}</p>
+                <Link to={`projects/${name}`}>Info</Link>
+              </div>
             </div>
-          </div>
-        );
-      })}
-      <Link className="router_link_button" to={"projects"}>
+          );
+        })}
+      </div>
+      <Link
+        className={`router_link_button ${styles.projects_morebtn}`}
+        to={"projects"}
+      >
         {lang.moreprojects}
       </Link>
     </div>
