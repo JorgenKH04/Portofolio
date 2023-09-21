@@ -34,6 +34,15 @@
   background-color: #000514;
 }
 
+.dark .hero a {
+  background-color: #0a0e24;
+}
+
+.dark .hero a:hover,
+.dark .cta button:hover {
+  background-color: #141c48;
+}
+
 .dark .aboutme_attributes p {
   background-color: #0a0e24;
 }

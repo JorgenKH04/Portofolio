@@ -22,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
 h1 {
   font-weight: 800;
 }

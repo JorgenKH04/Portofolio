@@ -33,8 +33,21 @@
   background-color: #b1d8f5;
 }
 
-.light .hero button {
+.light .hero a {
   background-color: #b6c8f7;
+}
+
+.light .hero a:hover {
+  background-color: #8fabf3;
+}
+
+.light .cta button:hover {
+  background-color: #b5d1e6;
+}
+
+.light .hero a:hover,
+.light .cta button:hover {
+  border-color: #000514;
 }
 
 .light .aboutme_attributes p {
