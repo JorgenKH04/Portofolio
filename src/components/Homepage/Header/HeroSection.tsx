@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-import { useLanguageContext } from "@/contexts/languageContext";
-import { useLayoutContext } from "@/contexts/layoutContext";
-import { useThemeContext } from "@/contexts/themeContext";
-import * as darkAnimation from "@/assets/animation/dark-mode-animation.webm";
-import * as lightAnimation from "@/assets/animation/light-mode-animation.webm";
-import styles from "@/css/Homepage/Herosection.module.css";
+import { useLanguageContext } from "@contexts/languageContext";
+import { useLayoutContext } from "@contexts/layoutContext";
+import { useThemeContext } from "@contexts/themeContext";
+import * as darkAnimation from "@assets/animation/dark-mode-animation.webm";
+import * as lightAnimation from "@assets/animation/light-mode-animation.webm";
+import styles from "@css/Homepage/Herosection.module.css";
 
 export function HeroSection() {
   const themeContext = useThemeContext();

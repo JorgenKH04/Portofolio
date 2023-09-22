@@ -6,7 +6,7 @@ import {
   Dispatch,
   ReactNode,
 } from "react";
-import { Language, LanguageType } from "@/data/language.ts";
+import { Language, LanguageType } from "@data/language";
 
 type ContextType = [LanguageType, Dispatch<SetStateAction<string>>];
 

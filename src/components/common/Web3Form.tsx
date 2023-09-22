@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import { useState } from "react";
 
-import { useLanguageContext } from "@/contexts/languageContext";
+import { useLanguageContext } from "@contexts/languageContext";
 //
 export function Web3Form({
   compClass,

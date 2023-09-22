@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import styles from "@css/common/navbar.module.css";
-import { useLanguageContext } from "@/contexts/languageContext.ts";
-import { useLayoutContext } from "@/contexts/layoutContext.ts";
-import { useThemeContext } from "@/contexts/themeContext.ts";
+import { useLanguageContext } from "@contexts/languageContext";
+import { useLayoutContext } from "@contexts/layoutContext";
+import { useThemeContext } from "@contexts/themeContext";
 import { SettingsMenu } from "./SettingsMenu";
 import { Logo } from "./Logo";
 

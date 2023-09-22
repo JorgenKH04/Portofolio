@@ -1,6 +1,6 @@
-import { frontEnd, backEnd, design } from "@data/skilldata.ts";
-import { useThemeContext } from "@contexts/themeContext.ts";
-import styles from "@/css/Homepage/MySkills.module.css";
+import { frontEnd, backEnd, design } from "@data/skilldata";
+import { useThemeContext } from "@contexts/themeContext";
+import styles from "@css/Homepage/MySkills.module.css";
 
 export function MySkills() {
   return (
