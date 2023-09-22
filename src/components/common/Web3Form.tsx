@@ -25,9 +25,11 @@ export function Web3Form({
   const [formSubmitted, setFormSubmitted] = useState("");
 
   const { submit: onSubmit } = useWeb3Forms({
-    accessKey: "0b7e4558-d0ae-433b-85bf-03a3fb5f89b6",
+    // biome-ignore lint/style/useNamingConvention: <explanation>
+    access_key: "0b7e4558-d0ae-433b-85bf-03a3fb5f89b6",
     settings: {
-      fromName: "Portofolio email",
+      // biome-ignore lint/style/useNamingConvention: <explanation>
+      from_name: "Portofolio email",
       subject: "New Contact Message from your Portofolio site",
     },
     onSuccess: (message) => {
