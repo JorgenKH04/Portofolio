@@ -1,13 +1,18 @@
-import { SetStateAction, createContext, useContext, useState } from "react";
-import { Language, LanguageType } from "../data/language";
+import {
+  SetStateAction,
+  createContext,
+  useContext,
+  useState,
+  Dispatch,
+  ReactNode,
+} from "react";
+import { Language, LanguageType } from "@/data/language.ts";
 
-type ContextType =
-  | [LanguageType, React.Dispatch<SetStateAction<string>>]
-  | null;
+type ContextType = [LanguageType, Dispatch<SetStateAction<string>>];
 
-const languageContext = createContext<ContextType | null>(null);
+const languageContext = createContext<ContextType>({} as ContextType);
 
-function LanguageProvider({ children }: { children: React.ReactNode }) {
+function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState("nb-NO");
   const initialLang = new Language(language).lang;
 

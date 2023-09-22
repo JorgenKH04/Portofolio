@@ -1,39 +1,38 @@
 import { Link } from "react-router-dom";
 
-import { useLanguageContext } from "../../../contexts/languageContext";
-import { useLayoutContext } from "../../../contexts/layoutContext";
-import { useThemeContext } from "../../../contexts/themeContext";
-import * as darkAnimation from "../../../assets/animation/dark-mode-animation.webm";
-import * as lightAnimation from "../../../assets/animation/light-mode-animation.webm";
-import styles from "../../../css/Homepage/Herosection.module.css";
+import { useLanguageContext } from "@/contexts/languageContext";
+import { useLayoutContext } from "@/contexts/layoutContext";
+import { useThemeContext } from "@/contexts/themeContext";
+import * as darkAnimation from "@/assets/animation/dark-mode-animation.webm";
+import * as lightAnimation from "@/assets/animation/light-mode-animation.webm";
+import styles from "@/css/Homepage/Herosection.module.css";
 
 export function HeroSection() {
   const themeContext = useThemeContext();
   const layoutContext = useLayoutContext();
   const languageContext = useLanguageContext();
-  if (!languageContext || !themeContext) return null;
   const lang = languageContext[0];
   const theme = themeContext[0];
   const mobile = layoutContext;
 
   function AnimationLogic() {
-    if (mobile) return null;
+    if (mobile) {
+      return;
+    }
     return (
       <>
-        {/* rome-ignore lint/a11y/useMediaCaption: <explanation> */}
         <video
-          loop
-          autoPlay
+          loop={true}
+          autoPlay={true}
           className={`${styles.hero_animation} ${
             theme === "light" ? "animation" : "none"
           }`}
         >
           <source src={lightAnimation.default} />
         </video>
-        {/* rome-ignore lint/a11y/useMediaCaption: <explanation> */}
         <video
-          loop
-          autoPlay
+          loop={true}
+          autoPlay={true}
           className={`${styles.hero_animation} ${
             theme === "dark" ? "animation" : "none"
           }`}

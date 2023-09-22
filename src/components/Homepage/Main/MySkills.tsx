@@ -1,6 +1,6 @@
-import { frontEnd, backEnd, design } from "../../../data/skilldata";
-import { useThemeContext } from "../../../contexts/themeContext";
-import styles from "../../../css/Homepage/MySkills.module.css";
+import { frontEnd, backEnd, design } from "@data/skilldata.ts";
+import { useThemeContext } from "@contexts/themeContext.ts";
+import styles from "@/css/Homepage/MySkills.module.css";
 
 export function MySkills() {
   return (
@@ -45,10 +45,14 @@ function SkillShowcase({
   imgLightMode?: string;
 }) {
   const themeContext = useThemeContext();
-  if (!themeContext) return null;
+  if (!themeContext) {
+    return;
+  }
   const theme = themeContext[0];
 
-  if (!img) return;
+  if (!img) {
+    return;
+  }
   let currentImage = img;
   if (imgLightMode && theme === "light") {
     currentImage = imgLightMode;

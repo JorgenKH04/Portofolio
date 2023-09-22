@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import { useState } from "react";
 
-import { useLanguageContext } from "../../contexts/languageContext";
+import { useLanguageContext } from "@/contexts/languageContext";
 //
 export function Web3Form({
   compClass,
@@ -25,29 +25,31 @@ export function Web3Form({
   const [formSubmitted, setFormSubmitted] = useState("");
 
   const { submit: onSubmit } = useWeb3Forms({
-    access_key: "0b7e4558-d0ae-433b-85bf-03a3fb5f89b6",
+    accessKey: "0b7e4558-d0ae-433b-85bf-03a3fb5f89b6",
     settings: {
-      from_name: "Portofolio email",
+      fromName: "Portofolio email",
       subject: "New Contact Message from your Portofolio site",
     },
     onSuccess: (message) => {
-      console.log(message);
       setFormSubmitted("Email sent successfully!");
       reset({
         name: "",
         email: "",
         message: "",
       });
+      console.info(message);
       setTimeout(() => {
         setFormSubmitted("");
       }, 2000);
     },
     onError: (message) => {
-      console.log(message);
+      console.info(message);
     },
   });
 
-  if (!isFormOpen) return null;
+  if (!isFormOpen) {
+    return null;
+  }
   return (
     <form className={compClass} onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="name">{lang?.formname}</label>
@@ -91,11 +93,11 @@ export function Web3Form({
       />
       <button type="submit">{lang?.formsubmit}</button>
       {/* Swap this to reusable modal popup in the future */}
-      {!formSubmitted ? null : (
+      {formSubmitted ? (
         <div>
           <p>Your form has been submitted</p>
         </div>
-      )}
+      ) : null}
     </form>
   );
 }

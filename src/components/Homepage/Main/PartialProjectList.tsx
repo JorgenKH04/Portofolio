@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 
-import { Projects } from "../../../data/projects";
-import { useLayoutContext } from "../../../contexts/layoutContext";
-import { useLanguageContext } from "../../../contexts/languageContext";
-import styles from "../../../css/Homepage/Projects.module.css";
+import { Projects } from "@data/projects";
+import { useLayoutContext } from "@contexts/layoutContext";
+import { useLanguageContext } from "@contexts/languageContext";
+import styles from "@css/Homepage/Projects.module.css";
 
 export function PartialProjectList() {
   const layoutContext = useLayoutContext();
   const languageContext = useLanguageContext();
-  if (!languageContext) return null;
   const lang = languageContext[0];
   const mobile = layoutContext;
   const renderedProjects = mobile ? 3 : 6;
@@ -19,7 +18,9 @@ export function PartialProjectList() {
       <div className={mobile ? styles.projects_mobile : styles.projects_pc}>
         {Projects.map((project, i) => {
           const { name, img, shortdescription } = project;
-          if (i >= renderedProjects) return;
+          if (i >= renderedProjects) {
+            return;
+          }
           return (
             <div
               style={{ backgroundImage: `url(${img})` }}
