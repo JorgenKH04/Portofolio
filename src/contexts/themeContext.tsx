@@ -1,10 +1,17 @@
-import { SetStateAction, createContext, useContext, useState } from "react";
+import {
+  SetStateAction,
+  createContext,
+  useContext,
+  useState,
+  Dispatch,
+  ReactNode,
+} from "react";
 
-type ContextType = [string, React.Dispatch<SetStateAction<string>>] | null;
+type ContextType = [string, Dispatch<SetStateAction<string>>];
 
-const themeContext = createContext<ContextType | null>(null);
+const themeContext = createContext<ContextType>({} as ContextType);
 
-function ThemeProvider({ children }: { children: React.ReactNode }) {
+function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState("dark");
 
   const themeState: ContextType = [theme, setTheme];
