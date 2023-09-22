@@ -16,7 +16,7 @@
 .footer_main {
   display: grid;
   grid-template:
-    "directory misc" 300px
+    "directory misc" 250px
     "contact contact" 200px / 50%;
 }
 
@@ -44,8 +44,81 @@
 
 .footer_main_misc a {
   font-size: 1rem;
+  margin: 0.1em 0;
 }
 
 .footer_main_contact {
   grid-area: contact;
+  padding: 0 6em;
+}
+
+.footer_main_contact h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer_main_contact p {
+  margin: 1em 0;
+  font-size: 1.25rem;
+}
+
+.footer_main_contact_icons {
+  display: flex;
+  gap: 1em;
+}
+
+.footer_main_tag {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+  padding: 2em;
+  margin-bottom: 3em;
+}
+
+.footer_main_tag p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+@media (width > 1000px) {
+  .footer {
+    padding: 5em 12em;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .footer_main {
+    display: flex;
+    align-items: start;
+  }
+
+  .footer_main_directory,
+  .footer_main_misc {
+    padding: 0;
+  }
+
+  .footer_main_misc {
+    margin: 0 5em;
+  }
+
+  .footer_main_contact {
+    padding: 0;
+  }
+
+  .footer_main_tag {
+    width: 20em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer_main_tag h1 {
+    font-size: 3em;
+  }
+  .footer_main_tag img {
+    height: 50px;
+  }
 }
