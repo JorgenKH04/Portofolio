@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, ReactNode } from "react";
 
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 const mobile = width <= 700 ? true : false;
@@ -6,7 +6,7 @@ const mobile = width <= 700 ? true : false;
 type ContextType = boolean;
 const layoutContext = createContext<ContextType>(mobile);
 
-function LayoutProvider({ children }: { children: React.ReactNode }) {
+function LayoutProvider({ children }: { children: ReactNode }) {
   return (
     <layoutContext.Provider value={mobile}>{children}</layoutContext.Provider>
   );
