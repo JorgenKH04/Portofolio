@@ -17,9 +17,9 @@ export function Footer() {
   return (
     <div className={styles.footer}>
       {mobile ? null : (
-        <div>
+        <div className={styles.footer_main_tag}>
           <Logo />
-          <small>@2023 Jorgen</small>
+          <p>@2023 Jorgen</p>
         </div>
       )}
 
@@ -57,7 +57,7 @@ export function Footer() {
         <div className={styles.footer_main_contact}>
           <h3>GET IN TOUCH</h3>
           <p>jorgenkh04.kodehode@gmail.com</p>
-          <div>
+          <div className={styles.footer_main_contact_icons}>
             <a href="https://github.com/JorgenKH04" target="blank_">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 46 44.85">
                 <title>https://github.com/JorgenKH04</title>{" "}
@@ -94,9 +94,9 @@ export function Footer() {
         </div>
       </div>
       {mobile ? (
-        <div>
+        <div className={styles.footer_main_tag}>
           <Logo />
-          <small>@2023 Jorgen</small>
+          <p>@2023 Jorgen</p>
         </div>
       ) : null}
     </div>
