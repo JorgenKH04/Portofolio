@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 import { Logo } from "./Logo";
-import { useLayoutContext } from "@/contexts/layoutContext";
-import { useLanguageContext } from "@/contexts/languageContext";
-import { useThemeContext } from "@/contexts/themeContext";
-import styles from "@/css/common/footer.module.css";
+import { useLayoutContext } from "@contexts/layoutContext";
+import { useLanguageContext } from "@contexts/languageContext";
+import { useThemeContext } from "@contexts/themeContext";
+import styles from "@css/common/footer.module.css";
 
 export function Footer() {
   const layoutContext = useLayoutContext();
@@ -93,12 +93,12 @@ export function Footer() {
           </div>
         </div>
       </div>
-      {!mobile ? null : (
+      {mobile ? (
         <div>
           <Logo />
           <small>@2023 Jorgen</small>
         </div>
-      )}
+      ) : null}
     </div>
   );
 }
