@@ -1,8 +1,8 @@
-import { HeroSection } from "../Homepage/Header/HeroSection";
-import { AboutMeSection } from "../Homepage/Main/AboutMeSection";
-import { MySkills } from "../Homepage/Main/MySkills";
-import { CtaCollaboration } from "../Homepage/Main/CtaCollaboration";
-import { PartialProjectList } from "../Homepage/Main/PartialProjectList";
+import { HeroSection } from "@components/Homepage/Header/HeroSection";
+import { AboutMeSection } from "@components/Homepage/Main/AboutMeSection";
+import { MySkills } from "@components/Homepage/Main/MySkills";
+import { CtaCollaboration } from "@components/Homepage/Main/CtaCollaboration";
+import { PartialProjectList } from "@components/Homepage/Main/PartialProjectList";
 
 export function Homepage() {
   return (
