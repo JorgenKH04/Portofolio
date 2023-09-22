@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import styles from "../../css/common/settingsmenu.module.css";
-import { useLanguageContext } from "../../contexts/languageContext";
-import { useThemeContext } from "../../contexts/themeContext";
-import { useLayoutContext } from "../../contexts/layoutContext";
+import styles from "@/css/common/settingsmenu.module.css";
+import { useLanguageContext } from "@/contexts/languageContext";
+import { useThemeContext } from "@/contexts/themeContext";
+import { useLayoutContext } from "@/contexts/layoutContext";
 
 export function SettingsMenu({ settingState }: { settingState: boolean }) {
   const [langMenu, setLangMenu] = useState(false);
   const languageContext = useLanguageContext();
   const themeContext = useThemeContext();
   const layoutContext = useLayoutContext();
-  if (!settingState) return null;
-  if (!languageContext || !themeContext) return null;
+  if (!settingState) {
+    return;
+  }
   const setLanguage = languageContext[1];
   const lang = languageContext[0];
   const setTheme = themeContext[1];

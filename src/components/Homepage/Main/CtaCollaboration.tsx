@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-import { useLanguageContext } from "../../../contexts/languageContext";
-import { Web3Form } from "../../common/Web3Form";
-import styles from "../../../css/Homepage/CTAcollab.module.css";
+import { useLanguageContext } from "@contexts/languageContext";
+import { Web3Form } from "@components/common/Web3Form";
+import styles from "@css/Homepage/CTAcollab.module.css";
 
 export function CtaCollaboration() {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const languageContext = useLanguageContext();
-  if (!languageContext) return null;
   const lang = languageContext[0];
   return (
     <div className={`cta ${styles.cta}`}>

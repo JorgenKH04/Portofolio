@@ -1,9 +1,8 @@
-import { useLanguageContext } from "../../../contexts/languageContext";
-import styles from "../../../css/Homepage/AboutMeSection.module.css";
+import { useLanguageContext } from "@contexts/languageContext";
+import styles from "@css/Homepage/AboutMeSection.module.css";
 
 export function AboutMeSection() {
   const languageContext = useLanguageContext();
-  if (!languageContext) return null;
   const lang = languageContext[0];
   return (
     <div className={styles.aboutme}>

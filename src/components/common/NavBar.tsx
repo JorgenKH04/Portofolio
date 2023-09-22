@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import styles from "../../css/common/navbar.module.css";
-import { useLanguageContext } from "../../contexts/languageContext";
-import { useLayoutContext } from "../../contexts/layoutContext";
-import { useThemeContext } from "../../contexts/themeContext";
+import { useLanguageContext } from "@/contexts/languageContext.ts";
+import { useLayoutContext } from "@/contexts/layoutContext.ts";
+import { useThemeContext } from "@/contexts/themeContext.ts";
 import { SettingsMenu } from "./SettingsMenu";
 import { Logo } from "./Logo";
 
@@ -13,7 +13,6 @@ export function NavBar() {
   const layoutContext = useLayoutContext();
   const languageContext = useLanguageContext();
   const themeContext = useThemeContext();
-  if (!languageContext || !themeContext) return null;
   const lang = languageContext[0];
   const theme = themeContext[0];
   const mobile = layoutContext;

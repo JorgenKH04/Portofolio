@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
 
 import { Logo } from "./Logo";
-import { useLayoutContext } from "../../contexts/layoutContext";
-import { useLanguageContext } from "../../contexts/languageContext";
-import { useThemeContext } from "../../contexts/themeContext";
-import styles from "../../css/common/footer.module.css";
+import { useLayoutContext } from "@/contexts/layoutContext";
+import { useLanguageContext } from "@/contexts/languageContext";
+import { useThemeContext } from "@/contexts/themeContext";
+import styles from "@/css/common/footer.module.css";
 
 export function Footer() {
   const layoutContext = useLayoutContext();
   const languageContext = useLanguageContext();
   const themeContext = useThemeContext();
-  if (!languageContext || !themeContext) return null;
   const lang = languageContext[0];
   const theme = themeContext[0];
   const mobile = layoutContext;
