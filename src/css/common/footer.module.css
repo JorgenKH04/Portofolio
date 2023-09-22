@@ -29,6 +29,7 @@
 }
 
 .footer_main_directory {
+  font-weight: 600;
   grid-area: directory;
 }
 
@@ -37,6 +38,7 @@
 }
 
 .footer_main_misc h1 {
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
