@@ -1,3 +1,4 @@
 Remake with zustand
 Add more interactivity and animations
 Redo design completely
+mby add seperate about me and contact page (unsure)
