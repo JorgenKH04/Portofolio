@@ -15,7 +15,7 @@ export function Footer() {
   const mobile = layoutContext;
   const svgColor = theme === "dark" ? "#B2D9F6" : "#000514";
   return (
-    <div className={styles.footer}>
+    <div className={`footer ${styles.footer}`}>
       {mobile ? null : (
         <div className={styles.footer_main_tag}>
           <Logo />
