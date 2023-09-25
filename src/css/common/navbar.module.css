@@ -19,6 +19,12 @@
   margin-right: 2.5em;
 }
 
+.navbar_rigth_linkdiv {
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+
 .navbar svg {
   height: 35px;
 }
@@ -51,5 +57,9 @@
     width: 100em;
     padding: 0 4em;
     border-radius: 4em;
+  }
+
+  .navbar_right {
+    min-height: 4em;
   }
 }

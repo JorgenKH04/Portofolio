@@ -58,6 +58,10 @@
   color: #b2d9f6;
 }
 
+.dark svg:hover path {
+  fill: #b2b9f6;
+}
+
 @media (width > 1000px) {
   .dark .hero_intro {
     padding: 2em 4em;
