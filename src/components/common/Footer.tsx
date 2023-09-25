@@ -25,12 +25,8 @@ export function Footer() {
 
       <div className={styles.footer_main}>
         <div className={styles.footer_main_directory}>
-          <Link className="router_link_button" to={"aboutme"}>
-            {lang.aboutme}
-          </Link>
-          <Link className="router_link_button" to={"contact"}>
-            {lang.contact}
-          </Link>
+          <a href="/#aboutme">{lang.aboutme}</a>
+          <a href="/#contact">{lang.contact}</a>
           <Link className="router_link_button" to={"projects"}>
             {lang.projects}
           </Link>

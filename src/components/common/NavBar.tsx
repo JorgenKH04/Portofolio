@@ -37,7 +37,10 @@ export function NavBar() {
               </svg>
             </button>
 
-            <SettingsMenu settingState={settingState} />
+            <SettingsMenu
+              settingState={settingState}
+              setSettingState={setSettingState}
+            />
           </div>
         </nav>
       ) : (
@@ -45,8 +48,8 @@ export function NavBar() {
           <Logo />
           <div className={styles.navbar_right}>
             <div className={styles.navbar_rigth_linkdiv}>
-              <Link to={"aboutme"}>{lang.aboutme}</Link>
-              <Link to={"contact"}>{lang.contact}</Link>
+              <a href="/#aboutme">{lang.aboutme}</a>
+              <a href="/#contact">{lang.contact}</a>
               <Link to={"projects"}>{lang.projects}</Link>
             </div>
             <div>
