@@ -5,7 +5,7 @@ export function AboutMeSection() {
   const languageContext = useLanguageContext();
   const lang = languageContext[0];
   return (
-    <div className={styles.aboutme}>
+    <div id="aboutme" className={styles.aboutme}>
       <h2>{lang.aboutme}</h2>
       <div className={styles.aboutme_content}>
         <div
