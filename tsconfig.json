@@ -26,7 +26,8 @@
       "@contexts*": ["./src/contexts/*"],
       "@css*": ["./src/css/*"],
       "@assets": ["./src/assets/*"],
-      "@components": ["./src/components/*"]
+      "@components": ["./src/components/*"],
+      "@layout": ["./src/layout/*"]
     }
   },
 

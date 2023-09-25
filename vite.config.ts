@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
-const aliases = ['data', 'contexts', 'css', 'assets', 'components'];
+const aliases = ['data', 'contexts', 'css', 'assets', 'components', 'layout'];
 
 // https://vitejs.dev/config/
 export default defineConfig({
