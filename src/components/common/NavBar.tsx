@@ -69,7 +69,10 @@ export function NavBar() {
                   />
                 </svg>
               </button>
-              <SettingsMenu settingState={settingState} />
+              <SettingsMenu
+                settingState={settingState}
+                setSettingState={setSettingState}
+              />
             </div>
           </div>
         </nav>
