@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { LayoutBase } from "./layout/LayoutBase";
-import { Homepage } from "./components/Pages/Homepage";
-import { LanguageProvider } from "./contexts/languageContext";
-import { LayoutProvider } from "./contexts/layoutContext";
-import { ThemeProvider } from "./contexts/themeContext";
+import { LayoutBase } from "@layout/LayoutBase";
+import { Homepage } from "@components/Pages/Homepage";
+import { LanguageProvider } from "@contexts/languageContext";
+import { LayoutProvider } from "@contexts/layoutContext";
+import { ThemeProvider } from "@contexts/themeContext";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<LayoutBase />}>
-                <Route index element={<Homepage />} />
+                <Route index={true} element={<Homepage />} />
                 <Route path="aboutme" element={<h1>About me</h1>} />
                 <Route path="contact" element={<h1>Contact</h1>} />
                 <Route path="projects" element={<h1>Projects</h1>} />
