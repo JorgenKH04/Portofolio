@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 66%;
   margin: auto;
+  padding-top: 8em;
   text-align: left;
   gap: 2em;
 }
@@ -61,7 +62,7 @@
 @media (width > 1000px) {
   .cta {
     width: 40%;
-    margin: 12em auto;
+    padding: 14em 0;
   }
 
   .cta h2 {
