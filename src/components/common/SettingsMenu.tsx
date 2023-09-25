@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, Dispatch, SetStateAction } from "react";
 
 import styles from "@css/common/settingsmenu.module.css";
 import { useLanguageContext } from "@contexts/languageContext";
 import { useThemeContext } from "@contexts/themeContext";
 import { useLayoutContext } from "@contexts/layoutContext";
 
-export function SettingsMenu({ settingState }: { settingState: boolean }) {
+export function SettingsMenu({
+  settingState,
+  setSettingState,
+}: {
+  settingState: boolean;
+  setSettingState: Dispatch<SetStateAction<boolean>>;
+}) {
   const [langMenu, setLangMenu] = useState(false);
   const languageContext = useLanguageContext();
   const themeContext = useThemeContext();
@@ -19,12 +25,23 @@ export function SettingsMenu({ settingState }: { settingState: boolean }) {
   const setTheme = themeContext[1];
   const theme = themeContext[0];
   const mobile = layoutContext;
+
+  function closeMenu() {
+    if (setSettingState) {
+      setSettingState(false);
+    }
+  }
+
   return (
     <div className={`menu ${styles.menu}`}>
       {mobile ? (
-        <div className={styles.menu_links}>
-          <Link to={"aboutme"}>{lang.aboutme}</Link>
-          <Link to={"contact"}>{lang.contact}</Link>
+        <div
+          className={styles.menu_links}
+          onClick={closeMenu}
+          onKeyDown={closeMenu}
+        >
+          <a href="/#aboutme">{lang.aboutme}</a>
+          <a href="/#contact">{lang.contact}</a>
           <Link to={"projects"}>{lang.projects}</Link>
         </div>
       ) : null}
@@ -33,6 +50,7 @@ export function SettingsMenu({ settingState }: { settingState: boolean }) {
         type="button"
         onClick={() => {
           setTheme(theme === "dark" ? "light" : "dark");
+          closeMenu();
         }}
       >
         <div className={styles.menu_iconcontainer}>
@@ -99,6 +117,7 @@ export function SettingsMenu({ settingState }: { settingState: boolean }) {
               onClick={() => {
                 setLanguage("nb-NO");
                 setLangMenu(false);
+                closeMenu();
               }}
             >
               Norsk Bokmål
@@ -108,6 +127,7 @@ export function SettingsMenu({ settingState }: { settingState: boolean }) {
               onClick={() => {
                 setLanguage("en-US");
                 setLangMenu(false);
+                closeMenu();
               }}
             >
               English
