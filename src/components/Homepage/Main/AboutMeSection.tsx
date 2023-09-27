@@ -1,5 +1,6 @@
 import { useLanguageContext } from "@contexts/languageContext";
 import styles from "@css/Homepage/AboutMeSection.module.css";
+import * as test from "@assets/test.pdf";
 
 export function AboutMeSection() {
   const languageContext = useLanguageContext();
@@ -21,6 +22,13 @@ export function AboutMeSection() {
         <div className={styles.aboutme_content_paragraphs}>
           <p>{lang.introparagraph2}</p>
           <p>{lang.introparagraph3}</p>
+          <a href={test.default} download={true}>
+            CV
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>arrow-down</title>
+              <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
