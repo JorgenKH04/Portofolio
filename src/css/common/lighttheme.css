@@ -12,6 +12,10 @@
   background-color: #a2c5e0;
 }
 
+.light svg path {
+  fill: #000514;
+}
+
 .light nav button {
   box-shadow: none;
 }
@@ -38,6 +42,11 @@
 }
 
 .light .hero a:hover {
+  background-color: #8fabf3;
+}
+
+.light .projects a:hover {
+  /* Looks really poor, but i have to relook entire light theme. */
   background-color: #8fabf3;
 }
 

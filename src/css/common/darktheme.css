@@ -13,6 +13,10 @@
   background-color: #0a0e24;
 }
 
+.dark svg path {
+  fill: #b2d9f6;
+}
+
 .dark .menu {
   background-color: #0a0e24;
   border-color: #b2d9f6;
@@ -39,7 +43,8 @@
 }
 
 .dark .hero a:hover,
-.dark .cta button:hover {
+.dark .cta button:hover,
+.dark .projects a:hover {
   background-color: #141c48;
 }
 

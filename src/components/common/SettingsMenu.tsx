@@ -104,10 +104,7 @@ export function SettingsMenu({
             viewBox="6 8.55 12 7.45"
           >
             <title>chevron down from pictogrammers</title>
-            <path
-              fill={theme === "dark" ? "#B2D9F6" : "#000514"}
-              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-            />
+            <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
           </svg>
         </button>
         {langMenu ? (
