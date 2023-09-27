@@ -13,7 +13,7 @@ export function PartialProjectList() {
   const renderedProjects = mobile ? 3 : 6;
 
   return (
-    <div className={styles.projects}>
+    <div className={`projects ${styles.projects}`}>
       <h2>Projects</h2>
       <div className={mobile ? styles.projects_mobile : styles.projects_pc}>
         {Projects.map((project, i) => {
