@@ -9,25 +9,39 @@ export function MySkills() {
       <div className={styles.myskills_skillgroups}>
         <div className={styles.myskills_skillgroups_group}>
           <h3>Front-End</h3>
-          {frontEnd.map(({ img, tech, imgLightMode }) => (
+          {frontEnd.map(({ img, tech, imgLightMode, creator, attribution }) => (
             <SkillShowcase
               key={tech}
               img={img}
               tech={tech}
               imgLightMode={imgLightMode}
+              creator={creator}
+              attribution={attribution}
             />
           ))}
         </div>
         <div className={styles.myskills_skillgroups_group}>
           <h3>Back-End</h3>
-          {backEnd.map(({ img, tech }) => (
-            <SkillShowcase key={tech} img={img} tech={tech} />
+          {backEnd.map(({ img, tech, creator, attribution }) => (
+            <SkillShowcase
+              key={tech}
+              img={img}
+              tech={tech}
+              creator={creator}
+              attribution={attribution}
+            />
           ))}
         </div>
         <div className={styles.myskills_skillgroups_group}>
           <h3>Design</h3>
-          {design.map(({ img, tech }) => (
-            <SkillShowcase key={tech} img={img} tech={tech} />
+          {design.map(({ img, tech, creator, attribution }) => (
+            <SkillShowcase
+              key={tech}
+              img={img}
+              tech={tech}
+              creator={creator}
+              attribution={attribution}
+            />
           ))}
         </div>
       </div>
@@ -39,10 +53,14 @@ function SkillShowcase({
   img,
   tech,
   imgLightMode,
+  creator,
+  attribution,
 }: {
   img: string;
   tech: string;
   imgLightMode?: string;
+  creator: string;
+  attribution: string;
 }) {
   const themeContext = useThemeContext();
   if (!themeContext) {
@@ -59,9 +77,14 @@ function SkillShowcase({
   }
   return (
     <div>
-      {/* Remove height from this */}
-      <img src={currentImage} alt={`${tech}'s logo`} />
-      <p>{tech}</p>
+      <a href={attribution} target="blank_">
+        <img
+          src={currentImage}
+          alt={`${tech}'s logo`}
+          title={`${tech}'s icon taken from ${creator}`}
+        />
+        <p>{tech}</p>
+      </a>
     </div>
   );
 }

@@ -16,29 +16,36 @@ import * as photoshopLogo from '@assets/skill-icons/icons8-photoshop-cropped.svg
 import * as illustratorLogo from '@assets/skill-icons/icons8-illustrator-cropped.svg';
 
 export const frontEnd = [
-  { img: htmlLogo.default, tech: 'HTML' },
-  { img: cssLogo.default, tech: 'CSS' },
-  { img: jsLogo.default, tech: 'Javascript' },
-  { img: tsLogo.default, tech: 'Typescript' },
+  {
+    img: htmlLogo.default,
+    tech: 'HTML',
+    creator: 'logos-download',
+    attribution: 'https://logos-download.com/18471-html5-logo-download.html',
+  },
+  { img: cssLogo.default, tech: 'CSS', creator: 'Icons8', attribution: 'https://icons8.com/icon/21278/css3' },
+  { img: jsLogo.default, tech: 'Javascript', creator: 'Icons8', attribution: 'https://icons8.com/icon/108784/javascript' },
+  { img: tsLogo.default, tech: 'Typescript', creator: 'Icons8', attribution: 'https://icons8.com/icon/uJM6fQYqDaZK/typescript' },
   {
     img: nextLogoLight.default,
     imgLightMode: nextLogoDark.default,
     tech: 'Next.js',
+    creator: 'seekicon',
+    attribution: 'https://seekicon.com/free-icon/next-js_1',
   },
-  { img: reactLogo.default, tech: 'React' },
+  { img: reactLogo.default, tech: 'React', creator: 'Icons8', attribution: 'https://icons8.com/icon/NfbyHexzVEDk/react' },
 ];
 
 export const backEnd = [
-  { img: csharpLogo.default, tech: 'C#' },
-  { img: nodeLogo.default, tech: 'Node.js' },
-  { img: mongodbLogo.default, tech: 'MongoDB' },
-  { img: dockerLogo.default, tech: 'Docker' },
-  { img: linuxLogo.default, tech: 'Linux' },
-  { img: gitLogo.default, tech: 'Git' },
+  { img: csharpLogo.default, tech: 'C#', creator: 'Icons8', attribution: 'https://icons8.com/icon/55251/c-sharp-logo' },
+  { img: nodeLogo.default, tech: 'Node.js', creator: 'Icons8', attribution: 'https://icons8.com/icon/54087/nodejs' },
+  { img: mongodbLogo.default, tech: 'MongoDB', creator: 'Icons8', attribution: 'https://icons8.com/icon/74402/mongodb' },
+  { img: dockerLogo.default, tech: 'Docker', creator: 'Icons8', attribution: 'https://icons8.com/icon/cdYUlRaag9G9/docker' },
+  { img: linuxLogo.default, tech: 'Linux', creator: 'logo wine', attribution: 'https://www.logo.wine/logo/Linux' },
+  { img: gitLogo.default, tech: 'Git', creator: 'Icons8', attribution: 'https://icons8.com/icon/20906/git' },
 ];
 
 export const design = [
-  { img: figmaLogo.default, tech: 'Figma' },
-  { img: photoshopLogo.default, tech: 'Photoshop' },
-  { img: illustratorLogo.default, tech: 'Illustrator' },
+  { img: figmaLogo.default, tech: 'Figma', creator: 'Icons8', attribution: 'https://icons8.com/icon/zfHRZ6i1Wg0U/figma' },
+  { img: photoshopLogo.default, tech: 'Photoshop', creator: 'Icons8', attribution: 'https://icons8.com/icon/13677/adobe-photoshop' },
+  { img: illustratorLogo.default, tech: 'Illustrator', creator: 'Icons8', attribution: 'https://icons8.com/icon/13631/adobe-illustrator' },
 ];
