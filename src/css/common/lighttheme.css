@@ -50,13 +50,13 @@
   background-color: #8fabf3;
 }
 
-.light .cta button:hover {
+.light .cta button:hover,
+.light .aboutme a:hover {
   background-color: #b5d1e6;
 }
 
-.light .hero a:hover,
-.light .cta button:hover {
-  border-color: #000514;
+.light .aboutme a {
+  background-color: #9cb6fc;
 }
 
 .light .aboutme_attributes p {
@@ -70,7 +70,7 @@
 .light .cta_form input,
 .light .cta_form textarea {
   background-color: #b1d8f5;
-  border: 1px solid #000514;
+  border-color: #000514;
   color: #000514;
 }
 

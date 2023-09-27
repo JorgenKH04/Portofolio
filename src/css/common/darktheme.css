@@ -44,8 +44,13 @@
 
 .dark .hero a:hover,
 .dark .cta button:hover,
-.dark .projects a:hover {
+.dark .projects a:hover,
+.dark .aboutme a:hover {
   background-color: #141c48;
+}
+
+.dark .aboutme a {
+  background-color: #0a0e24;
 }
 
 .dark .aboutme_attributes p {
@@ -59,7 +64,7 @@
 .dark .cta_form input,
 .dark .cta_form textarea {
   background-color: #000514;
-  border: 1px solid #b2d9f6;
+  border-color: #b2d9f6;
   color: #b2d9f6;
 }
 
