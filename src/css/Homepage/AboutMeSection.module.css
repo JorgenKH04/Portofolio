@@ -23,6 +23,7 @@
 }
 
 .aboutme_content_attributes {
+  opacity: 80%;
   width: 80%;
   display: grid;
   gap: 1em;
@@ -74,6 +75,20 @@
 .aboutme_content_paragraphs {
   font-size: 1rem;
   line-height: 1.5em;
+}
+
+.aboutme_content_paragraphs a {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+  align-self: self-start;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+}
+
+.aboutme_content_paragraphs svg {
+  height: 1.25em;
 }
 
 @media (width < 600px) {
