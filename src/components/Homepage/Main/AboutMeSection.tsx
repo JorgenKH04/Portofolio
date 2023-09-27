@@ -6,7 +6,7 @@ export function AboutMeSection() {
   const languageContext = useLanguageContext();
   const lang = languageContext[0];
   return (
-    <div id="aboutme" className={styles.aboutme}>
+    <div id="aboutme" className={`aboutme ${styles.aboutme}`}>
       <h2>{lang.aboutme}</h2>
       <div className={styles.aboutme_content}>
         <div
@@ -25,7 +25,7 @@ export function AboutMeSection() {
           <a href={test.default} download={true}>
             CV
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <title>arrow-down</title>
+              <title>arrow-down from pictogrammers.org</title>
               <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
             </svg>
           </a>
