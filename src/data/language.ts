@@ -34,6 +34,7 @@ export interface LanguageType extends Array<string> {
   formemail: string;
   formmessage: string;
   formsubmit: string;
+  cv: string;
 }
 
 export class Language {

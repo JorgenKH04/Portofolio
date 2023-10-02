@@ -1,3 +1,5 @@
+import * as test from '@assets/CVnor.pdf';
+
 export class Lang extends Array<string> {
   greeting = 'Hei, jeg heter Jørgen';
   introparagraph1 =
@@ -35,4 +37,5 @@ export class Lang extends Array<string> {
   formemail = 'Eposten din';
   formmessage = 'Send meg en melding.';
   formsubmit = 'Send';
+  cv = test.default;
 }
