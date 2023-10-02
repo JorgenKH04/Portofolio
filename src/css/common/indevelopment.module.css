@@ -1,0 +1,17 @@
+.unfinished {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.unfinished h1 {
+  font-size: 4rem;
+}
+
+.unfinished p {
+  font-size: 2rem;
+}
