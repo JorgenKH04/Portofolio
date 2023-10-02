@@ -38,4 +38,6 @@ export class Lang extends Array<string> {
   formmessage = 'Send meg en melding.';
   formsubmit = 'Send';
   cv = test.default;
+  underdevelopmentheader = 'Denne siden er under utvikling.';
+  underdevelopmentparagraph = 'Vi jobber hardt for å få den klar til deg, så sjekk tilbake snart.';
 }

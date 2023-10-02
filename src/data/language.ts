@@ -35,6 +35,8 @@ export interface LanguageType extends Array<string> {
   formmessage: string;
   formsubmit: string;
   cv: string;
+  underdevelopmentheader: string;
+  underdevelopmentparagraph: string;
 }
 
 export class Language {

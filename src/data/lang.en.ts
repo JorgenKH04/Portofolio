@@ -17,8 +17,8 @@ export class Lang extends Array<string> {
   flexible = 'Flexible';
   criticalthinker = 'Critical thinker';
   problemsolver = 'Problem-solver';
-  organized = 'organized';
-  adaptable = 'adaptable';
+  organized = 'Organized';
+  adaptable = 'Adaptable';
   myskills = 'My skills';
   collaborationheader = 'Looking to collaborate?';
   collaborationpart1 = 'I would love to hear from you. Feel free to reach out via email at';
@@ -38,4 +38,6 @@ export class Lang extends Array<string> {
   formmessage = 'Leave a message.';
   formsubmit = 'Submit';
   cv = test.default;
+  underdevelopmentheader = 'This page is under construction.';
+  underdevelopmentparagraph = "We're working hard to get it ready for you, so please check back soon.";
 }
