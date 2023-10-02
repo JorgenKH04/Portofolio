@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LayoutBase } from "@layout/LayoutBase";
 import { Homepage } from "@components/Pages/Homepage";
 import { ProjectPage } from "@components/Pages/ProjectPage";
+import { Attribution } from "@components/Pages/Attribution";
 import { LanguageProvider } from "@contexts/languageContext";
 import { LayoutProvider } from "@contexts/layoutContext";
 import { ThemeProvider } from "@contexts/themeContext";
@@ -17,6 +18,7 @@ function App() {
               <Route path="/" element={<LayoutBase />}>
                 <Route index={true} element={<Homepage />} />
                 <Route path="projects" element={<ProjectPage />} />
+                <Route path="attribution" element={<Attribution />} />
               </Route>
             </Routes>
           </BrowserRouter>
