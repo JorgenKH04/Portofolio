@@ -50,9 +50,7 @@ export function HeroSection() {
         <h1>{lang.greeting}</h1>
         <p>{lang.introparagraph1}</p>
         <div className={styles.hero_buttons}>
-          <Link to={"/contact"} type="button">
-            {lang.contactbutton}
-          </Link>
+          <a href="/#contact">{lang.contactbutton}</a>
           <Link to={"/projects"}>{lang.projectsbutton}</Link>
         </div>
       </div>
