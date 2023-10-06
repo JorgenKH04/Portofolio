@@ -83,3 +83,15 @@
     font-size: 2rem;
   }
 }
+
+@media (width < 1500px) {
+  .navbar {
+    width: 70em;
+  }
+  .navbar img {
+    height: 35px;
+  }
+  .navbar h1 {
+    font-size: 1.75rem;
+  }
+}

@@ -86,6 +86,7 @@
 }
 @media (width < 1700px) {
   .cta {
+    width: 66%;
     padding: 6em;
   }
   .cta h2 {
@@ -93,7 +94,7 @@
   }
 
   .cta p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .cta_form input,

@@ -129,3 +129,21 @@ h3 {
     gap: 2em;
   }
 }
+
+@media (width < 1500px) {
+  .projects_pc {
+    gap: 1.75em 0.5em;
+  }
+
+  .projects_pc .projects_project {
+    height: 350px;
+  }
+
+  .projects_project p {
+    font-size: 0.75rem;
+    width: 90%;
+  }
+  .projects_project_info {
+    gap: 1em;
+  }
+}
