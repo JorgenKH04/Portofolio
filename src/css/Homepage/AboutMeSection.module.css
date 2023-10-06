@@ -113,14 +113,16 @@
 }
 
 @media (width > 1000px) {
-  .aboutme h2 {
-    font-size: 2rem;
-  }
-
   .aboutme_content {
     justify-content: center;
     flex-direction: row;
     gap: 6em;
+  }
+}
+
+@media (width > 1700px) {
+  .aboutme h2 {
+    font-size: 2rem;
   }
 
   .aboutme_content_attributes {
@@ -136,5 +138,30 @@
 
   .aboutme_content_paragraphs {
     font-size: 0.9rem;
+  }
+}
+
+@media (width < 1700px) {
+  .aboutme h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutme_content_attributes {
+    width: 40%;
+  }
+  .aboutme_content_attributes p {
+    font-size: 0.9rem;
+  }
+
+  .aboutme_content_paragraphs {
+    width: 40%;
+  }
+
+  .aboutme_content_paragraphs {
+    font-size: 0.8rem;
+  }
+
+  .aboutme a {
+    font-size: 1.25rem;
   }
 }

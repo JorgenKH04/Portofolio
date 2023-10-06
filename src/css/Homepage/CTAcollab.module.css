@@ -60,12 +60,22 @@
   margin-bottom: 1em;
 }
 
+.cta_form button {
+  margin-top: 1em;
+}
+
 @media (width > 1000px) {
   .cta {
     width: 40%;
     padding: 14em 0;
   }
 
+  .cta button {
+    margin-bottom: 2em;
+  }
+}
+
+@media (width > 1700px) {
   .cta h2 {
     font-size: 2rem;
   }
@@ -73,8 +83,28 @@
   .cta p {
     font-size: 1rem;
   }
+}
+@media (width < 1700px) {
+  .cta {
+    padding: 6em;
+  }
+  .cta h2 {
+    font-size: 1.5rem;
+  }
 
-  .cta button {
-    margin-bottom: 2em;
+  .cta p {
+    font-size: 0.75rem;
+  }
+
+  .cta_form input,
+  .cta_form textarea {
+    margin: 1em 0;
+    padding: 1em;
+    font-size: 0.75rem;
+  }
+
+  .cta_form textarea {
+    height: 8em;
+    margin-bottom: 0.5em;
   }
 }

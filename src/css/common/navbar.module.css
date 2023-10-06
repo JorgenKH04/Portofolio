@@ -29,8 +29,11 @@
   height: 35px;
 }
 
-.navbar_logo {
-  height: 2000px;
+.navbar img {
+  height: 50px;
+}
+.navbar h1 {
+  font-size: 2.25rem;
 }
 
 .navbar_right {
@@ -54,12 +57,29 @@
     top: 2em;
     left: 50%;
     transform: translate(-50%, 0);
+    border-radius: 4em;
+  }
+}
+
+@media (width > 1700px) {
+  .navbar {
     width: 100em;
     padding: 0 4em;
-    border-radius: 4em;
   }
 
   .navbar_right {
     min-height: 4em;
+  }
+}
+
+@media (width < 1700px) {
+  .navbar {
+    width: 80em;
+  }
+  .navbar img {
+    height: 40px;
+  }
+  .navbar h1 {
+    font-size: 2rem;
   }
 }

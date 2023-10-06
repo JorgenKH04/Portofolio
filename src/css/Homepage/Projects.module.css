@@ -28,11 +28,9 @@
   border-radius: 2em;
   margin: 1em auto;
   background-blend-mode: multiply;
-  background-color: #202020;
-  border: 1px double #202020;
   background-position: center;
   background-size: 101% 101%;
-  min-height: 350px;
+  height: 350px;
 }
 
 .projects_project_info {
@@ -68,6 +66,7 @@ h3 {
   display: grid;
   grid-template: repeat(2, 45%) / repeat(3, 32%);
   gap: 4em 2em;
+  justify-content: center;
   margin: 0;
 }
 
@@ -103,5 +102,30 @@ h3 {
   .projects_morebtn {
     margin: 0 auto;
     width: 50%;
+  }
+}
+
+@media (width < 1700px) {
+  .projects:has(.projects_pc) {
+    width: 80%;
+  }
+
+  .projects_pc {
+    gap: 2em 1em;
+  }
+  .projects_morebtn {
+    width: 30%;
+  }
+
+  .projects_pc .projects_project {
+    height: 350px;
+  }
+
+  .projects_project p {
+    font-size: 0.8rem;
+    width: 85%;
+  }
+  .projects_project_info {
+    gap: 2em;
   }
 }

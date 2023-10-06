@@ -54,19 +54,17 @@
 
   .myskills h2 {
     grid-area: h2;
-    font-size: 2rem;
   }
 
   .myskills_skillgroups {
     flex-direction: row;
   }
+}
 
-  .myskills_skillgroups_group h3 {
-    width: 6em;
-    padding-bottom: 0.5em;
-    font-size: 1.5rem;
+@media (width > 1700px) {
+  .myskills h2 {
+    font-size: 2rem;
   }
-
   .myskills_skillgroups_group p {
     font-size: 1rem;
   }
@@ -74,5 +72,30 @@
   .myskills_skillgroups_group img {
     height: 70px;
     width: 200px;
+  }
+
+  .myskills_skillgroups_group h3 {
+    width: 6em;
+    padding-bottom: 0.5em;
+    font-size: 1.5rem;
+  }
+}
+@media (width < 1700px) {
+  .myskills h2 {
+    font-size: 1.5rem;
+  }
+  .myskills_skillgroups_group p {
+    font-size: 0.75rem;
+  }
+
+  .myskills_skillgroups_group img {
+    height: 60px;
+    width: 180px;
+  }
+
+  .myskills_skillgroups_group h3 {
+    width: 6em;
+    padding-bottom: 0.5em;
+    font-size: 1rem;
   }
 }
