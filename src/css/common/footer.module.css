@@ -206,3 +206,37 @@
     font-size: 2rem;
   }
 }
+
+@media (width < 1300px) {
+  .footer_main_directory {
+    font-size: 1.75rem;
+  }
+
+  .footer_main_misc h1 {
+    font-size: 1.75rem;
+  }
+
+  .footer_main_misc a {
+    font-size: 1.25rem;
+  }
+
+  .footer_main_contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer_main_contact p {
+    font-size: 1.3rem;
+  }
+
+  .footer_main_tag p {
+    font-size: 1.5rem;
+  }
+
+  .footer_main_tag img {
+    height: 50px;
+  }
+
+  .footer_main_tag h1 {
+    font-size: 3rem;
+  }
+}

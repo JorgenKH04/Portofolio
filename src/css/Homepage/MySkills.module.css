@@ -47,7 +47,7 @@
   width: 200px;
 }
 
-@media (width > 1300px) {
+@media (width > 1200px) {
   .myskills {
     margin: 8em 0;
   }
@@ -84,6 +84,13 @@
   .myskills h2 {
     font-size: 1.5rem;
   }
+
+  .myskills_skillgroups_group h3 {
+    width: 6em;
+    padding-bottom: 0.5em;
+    font-size: 1rem;
+  }
+
   .myskills_skillgroups_group p {
     font-size: 0.75rem;
   }
@@ -92,10 +99,49 @@
     height: 60px;
     width: 180px;
   }
+}
+
+@media (width < 1200px) {
+  .myskills_skillgroups {
+    width: 100%;
+    align-items: center;
+  }
+
+  .myskills_skillgroups_group {
+    width: 60%;
+  }
+
+  .myskills h2 {
+    font-size: 2rem;
+  }
 
   .myskills_skillgroups_group h3 {
-    width: 6em;
-    padding-bottom: 0.5em;
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .myskills_skillgroups_group p {
+    font-size: 1.25rem;
+  }
+
+  .myskills_skillgroups_group img {
+    height: 80px;
+  }
+}
+
+@media (width < 1200px) {
+  .myskills h2 {
+    font-size: 1.75rem;
+  }
+
+  .myskills_skillgroups_group h3 {
+    font-size: 1.4rem;
+  }
+
+  .myskills_skillgroups_group p {
+    font-size: 1.1rem;
+  }
+
+  .myskills_skillgroups_group img {
+    height: 70px;
   }
 }

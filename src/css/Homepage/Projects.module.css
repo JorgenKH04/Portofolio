@@ -147,3 +147,68 @@ h3 {
     gap: 1em;
   }
 }
+
+@media (width < 1300px) {
+  .projects_project {
+    visibility: visible;
+    background-color: #202020;
+    border: 1px double #202020;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35em;
+  }
+
+  .projects_project_info h3 {
+    font-size: 1.75rem;
+  }
+  .projects_project_info p {
+    width: 75%;
+    font-size: 1rem;
+    margin: 2em 0;
+  }
+  .projects_project_info a {
+    font-size: 1.5rem;
+  }
+
+  .projects .projects_morebtn {
+    margin: 0 auto;
+    font-size: 1.75rem;
+  }
+}
+
+@media (width < 1300px) {
+  .projects {
+    width: 70%;
+  }
+
+  .projects_project {
+    visibility: visible;
+    background-color: #202020;
+    border: 1px double #202020;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25em;
+  }
+
+  .projects_project_info h3 {
+    font-size: 1.75rem;
+  }
+  .projects_project_info p {
+    width: 75%;
+    font-size: 1rem;
+    margin: 2em 0;
+  }
+  .projects_project_info a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (width < 1100px) {
+  .projects .projects_morebtn {
+    font-size: 1.5rem;
+  }
+}
