@@ -51,7 +51,7 @@
   opacity: 70%;
 }
 
-@media (width > 1000px) {
+@media (width > 1300px) {
   .navbar {
     position: fixed;
     top: 2em;
@@ -93,5 +93,11 @@
   }
   .navbar h1 {
     font-size: 1.75rem;
+  }
+}
+
+@media (width < 1300px) {
+  .navbar {
+    width: 100%;
   }
 }

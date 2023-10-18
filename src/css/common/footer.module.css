@@ -84,7 +84,7 @@
   font-size: 1.2rem;
 }
 
-@media (width > 1000px) {
+@media (width > 1300px) {
   .footer {
     padding: 5em 12em;
     justify-content: space-between;

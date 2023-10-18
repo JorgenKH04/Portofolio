@@ -1,7 +1,7 @@
 import { createContext, useContext, ReactNode } from "react";
 
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
-const mobile = width <= 700 ? true : false;
+const mobile = width <= 1300 ? true : false;
 
 type ContextType = boolean;
 const layoutContext = createContext<ContextType>(mobile);

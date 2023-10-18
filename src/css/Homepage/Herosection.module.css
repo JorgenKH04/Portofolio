@@ -38,30 +38,12 @@
   border-radius: 0.2em;
 }
 
-@media (width < 600px) {
-  .hero_intro {
-    width: 70%;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 0.85rem;
-  }
-
-  .hero a {
-    font-size: 1rem;
-  }
-}
-
 .hero_animation {
   width: 100%;
   height: 100%;
 }
 
-@media (width > 1000px) {
+@media (width > 1300px) {
   .hero {
     position: relative;
     z-index: 0;

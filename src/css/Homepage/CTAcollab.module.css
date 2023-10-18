@@ -64,7 +64,7 @@
   margin-top: 1em;
 }
 
-@media (width > 1000px) {
+@media (width > 1300px) {
   .cta {
     width: 40%;
     padding: 14em 0;

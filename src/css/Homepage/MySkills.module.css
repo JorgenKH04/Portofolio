@@ -47,7 +47,7 @@
   width: 200px;
 }
 
-@media (width > 1000px) {
+@media (width > 1300px) {
   .myskills {
     margin: 8em 0;
   }

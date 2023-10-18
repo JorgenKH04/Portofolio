@@ -73,7 +73,7 @@
   transition: rotate 0.4s;
 }
 
-@media (width > 1000px) {
+@media (width > 1300px) {
   .menu {
     /* overflow: hidden; */
     width: 20em;
