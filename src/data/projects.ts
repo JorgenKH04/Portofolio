@@ -10,9 +10,9 @@ export const Projects = [
     github: 'https://github.com/JorgenKH04/Portofolio',
     netlify: 'https://jorgen-portofolio.netlify.app/',
     tagline: '',
-    shortdescription: `This portfolio project serves as a comprehensive showcase of your professional
-             profile and achievements. It represents the site you are currently visiting, encompassing your
-              skills, contact information, and a curated selection of notable projects.`,
+    shortdescription: `This is my portfolio website that showcases 
+    my skills and experience in web development, including front-end development, 
+    back-end development, and user experience design.`,
     img: portfolio.default,
     role: '',
   },
